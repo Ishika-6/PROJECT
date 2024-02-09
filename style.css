@@ -1,418 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    opacity: 100%;
-}
-.container{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    /* margin-top: 20%; */
-    background-image: url("images/bg.jpg");
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.123)), url("images/bg.jpg");
-   
-    /* background-size: cover; */
-    
-}
-.genre-bg{
-    height:25%;
-    width: 70%;
-    border-radius: 10px;
-    display: block;
-    background-color: rgba(0, 0, 0, 0.144);
-    /* background-image: linear-gradient(to top, 70% rgba(0,0,0),80%rgba(0,0,0)); */
-   
-    
-}
-.genre-content {
-    margin: 1% 0%;
-    display: flex;
-    padding: 10px;
-    white-space: nowrap;
-
-    height: 80%;
-    overflow-x: hidden;
-    backdrop-filter: blur(20px) brightness(0.9);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 0 40px rgba(0, 0, 0, 0.2), 0 0 0 5px rgba(255, 255, 255, 0.1) inset;
-    border-radius: 10px;
-    
-    
-  }
-  .genre-content:hover .genre {
-    animation-play-state: paused;
-  }
-  
-  
-.genre {
-    border-radius: 5px;
-    
-    width: 20%;
-    height: 100%;
-    flex-shrink: 0; 
-    margin: 0 5px; 
-    border-radius: 7px;
-    
-    animation: scroll 25s linear  infinite  ;
-}
-@keyframes scroll {
-    0%{
-        transform: translateX(0%);
-    }
-    100%{
-        transform: translateX(calc(-1200% - 20px));
-    }
-    
-}
-.genre-name h3{
-    font-size: 1.2rem;
-}
-.genre-name{
-    color: white;
-    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(5, 5, 5, 0));  */
-    background-color: rgba(0, 0, 0, 0.702);
-    height: 100%;
-    width: 100%;
-    padding: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 7px;
-}
-.genre-scifi{
-    background-image: url("images/scifi.jpg");
-    background-size: cover;
-}
-.genre-thriller{
-    background-image: url("images/thriller.jpg");
-    background-size: cover;
-}
-.genre-mangas{
-    background-image: url("images/manga.jpg");
-    background-size: cover;
-}
-.genre-fiction{
-    background-image: url("images/fiction.jpg");
-    background-size: cover;
-}
-.genre-romance{
-    background-image: url("images/mystery.jpg");
-    background-size: cover;
-}
-.genre-comics{
-    background-image: url("images/comic.jpg");
-    background-size: cover;
-}
-.genre-psychology{
-    background-image: url("images/psychology.jpg");
-    background-size: cover;
-}
-.genre-scifi{
-    background-image: url("images/scifi.jpg");
-    background-size: cover;
-}
-.genre-selfhelp{
-    background-image: url("images/self-help.jpg");
-    background-size: cover;
-}
-.genre-horror{
-    background-image: url("images/horror.jpg");
-    background-size: cover;
-}
-.genre-poetry{
-    background-image: url("images/poetry.jpg");
-    background-size: cover;
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.btn{
-    font-family: 'Be Vietnam Pro', sans-serif;
-    font-size: 1rem;
-    padding: 10px 20px;
-    border: 1px solid black;
-    background-color: transparent;
-    cursor: pointer;
-    margin-bottom: 100px;
-}
-
-.books{
-    height: 70vh;
-    width: 70%;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1));
-    
-    backdrop-filter: blur(2px) brightness(0.9);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 0 40px rgba(0, 0, 0, 0.2), 0 0 0 5px rgba(255, 255, 255, 0.1) inset;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 20px;
-    transition: opacity 0.7s ease-in-out;
-    opacity: 0;
-    border-radius: 15px;
-    color: white;
-    justify-content: space-evenly;
-    position: relative; /* Ensure positioning context for book text */
-}
-
-.books.visible {
-    opacity: 1;
-}
-
-.book{
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    
-    background-color: rgba(0, 0, 0, 0.551); 
-    border-radius: 10px;
-    margin: 0px 30px;
-    margin-bottom: 25px;
-    position: relative; /* Ensure positioning context for absolute positioning */
-}
-
-.book img {
-    border-radius: 10px;
-}
-
-.booktext{
-    font-family: 'Be Vietnam Pro', sans-serif;
-    font-size: 0.85rem;
-    color: white;
-    width: 150px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    
-    margin: 10px 10px;
-    border-radius: 5px;
-}
-.book {
-    position: relative;
-    overflow: hidden; /* Ensure the gradient doesn't overflow */
-    border-radius: 10px;
-}
-
-.book::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
-    z-index: 1; /* Ensure the gradient is behind the text */
-}
-body{
-    background-image: url("images/asdasd.jpg");
-    background-size: cover;
-    overflow-x: hidden;
-    font-family: 'Be Vietnam Pro', sans-serif;
-}
-
-.section-5{
-    display: flex;
-    align-items: center;
-    height: 100vh;
-    justify-content: center;
-}
-
-.glassWindow{
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    height: 70vh;
-    width: 70%;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 20px;
-    border: 15px solid rgba(0, 0, 0, 0.18);
-    box-shadow: 0 8px 32px 4px rgba(0, 0, 0, 0.37);
-
-}
-
-.this-container{
-    display: flex;
-    overflow: hidden;
-    align-items: center;
-    height: 70vh;
-    width: 100%;
-}
-
-.section-5-container{
-    flex: 0 0 100%;
-    display: flex;
-    height: 70vh;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.section-5-container img{
-    width: 20vw;
-    height: 50vh;
-}
-
-.section-5-container h3{
-    color: #241607;
-    text-shadow: 0 0 10px #bcaba1;
-}
-
-.section-5-container div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 20vw;
-    margin-left: 5vw;
-}
-
-.section-5-container div p:nth-of-type(1){
-    color: #bcaba1;
-    text-shadow: 0 0 10px #bcaba1;
-    font-weight: 800;
-    font-size: 1vw;
-    text-align: right;
-    font-family: 'Playfair Display', serif;
-}
-
-.section-5-container div p:nth-of-type(2){
-    font-weight: 600;
-    text-shadow: 0 0 2px #ffffff;
-    color: #351a09
-}
-
-.nextButton{
-    justify-content: flex;
-    align-self: center;
-    width: 5vw;
-    height: 5vw;
-    color: #351a09;
-    background-color: #bcaba1;
-    border-radius: 50%;
-    transition: 0.5s;
-}
-
-.nextButton:hover{
-    border-radius: 10%;
-    cursor: pointer;
-}
-
-
-.inside-section-5-container button{
-    all:unset;
-    text-align: center;
-    width: 10vw;
-    height: 3vw;
-    color: black;
-    margin-top: 1vw;
-    border-radius: 7%;
-    border: 2px solid #351a09;
-    background-color: #bcaba1;
-    color: #351a09;
-}
-
-.inside-section-5-container button:hover{
-    cursor: pointer;
-    transform: scale(1.1);
-    transition: 0.5s;
-    box-shadow: 0 0 10px 2.5px black;
-    border-radius: 0%;
-}
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    font-family: 'Be Vietnam Pro', sans-serif;
-    background-color: beige;
-}
-
-.screen{
-    height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.works{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 90vh;
-    width: 70%;
-    align-items: center;
-    text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    border-radius: 10px;
-    padding: 20px;
-}
-
-.works h1{
-    font-size: 2rem;
-    margin-bottom: 2rem;
-}
-
-.bottom h2{
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.top{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    height: 30%;
-}
-
-.bottom{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    height: 70%;
-    text-align: left;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    gap: 5rem;
-    padding-bottom: 8rem;
-}
-
-@media screen and (max-width: 768px){
-    .bottom{
-        grid-template-columns: 1fr;
-    }
-    .works{
-        height: 110vh;
-        width: 90%;
-    }
-}
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 *,
@@ -424,15 +9,29 @@ body{
   font-family: 'Comfortaa', cursive;
 }
 
-section {
+.main{
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #7B4B2D;
+  background: beige;
   min-height: 100vh;
   overflow: hidden;
+
 }
+
+.kukreja {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: 	#dbd0c4;
+  min-height: 100vh;
+  overflow: hidden;
+  color: 	#964B00;
+}
+
+
 
 .content {
   display: flex;
@@ -460,10 +59,11 @@ section {
   max-width: 450px;
   padding: 0 35px;
   text-align: justify;
+  padding: 20px;
 }
 
 .info p{
-  color: #fff;
+  color: 	#201001;
   font-weight: 500;
   font-size: 1rem;
   margin-bottom: 20px;
@@ -612,7 +212,7 @@ section {
   left: 25%;
   width: 80px;
   height: 80px;
-  background-image: url("images/books_image/TheLeague");
+  background-image: url("books_image/TheLeague");
   background-size: cover;
   animation-delay: 0s;
 }
@@ -623,7 +223,7 @@ section {
   height: 20px;
   animation-delay: 2s;
   animation-duration: 12s;
-  background-image: url("images/books_images/TalonTheBlack.jpg");
+  background-image: url("books_images/TalonTheBlack.jpg");
   background-size: cover;
 }
 
@@ -632,7 +232,7 @@ section {
   width: 20px;
   height: 20px;
   animation-delay: 4s;
-  background-image: url("images/books_images/HerClaim.jpg");
+  background-image: url("books_images/HerClaim.jpg");
   background-size: cover;
 }
 
@@ -641,7 +241,7 @@ section {
   width:60px;
   height: 60px;
   animation-delay: 0s;
-  background-image: url("images/books_images/SummonSecondChance.jpg");
+  background-image: url("books_images/SummonSecondChance.jpg");
   background-size: cover;
   animation-duration: 18s;
 }
@@ -650,7 +250,7 @@ section {
   left: 65%;
   width: 20px;
   height: 20px;
-  background-image: url("images/books_images/TalonTheBlack.jpg");
+  background-image: url("books_images/TalonTheBlack.jpg");
   background-size: cover;
   animation-delay: 0s;
 }
@@ -659,7 +259,7 @@ section {
   left: 75%;
   width: 110px;
   height: 110px;
-  background-image: url("images/books_images/LivingAWillian.jpg");
+  background-image: url("books_images/LivingAWillian.jpg");
   background-size: cover;
   animation-delay: 3s;
 }
@@ -668,7 +268,7 @@ section {
   left: 35%;
   width: 150px;
   height: 150px;
-  background-image: url("images/books_images/HerClaim.jpg");
+  background-image: url("books_images/HerClaim.jpg");
   background-size: cover;
   animation-delay: 7s;
 }
@@ -679,7 +279,7 @@ section {
   height: 25px;
   animation-delay: 1s;
   animation-duration: 45s;
-  background-image: url("images/books_images/GloriaVaeVictis.jpg");
+  background-image: url("books_images/GloriaVaeVictis.jpg");
   background-size: cover;
 }
 
@@ -689,7 +289,7 @@ section {
   height: 60px;
   animation-delay: 2s;
   animation-duration: 35s;
-  background-image: url("images/books_images/CavenoughTower.jpg");
+  background-image: url("books_images/CavenoughTower.jpg");
   background-size: cover;
 }
 
@@ -699,7 +299,7 @@ section {
   height: 150px;
   animation-delay: 0s;
   animation-duration: 11s;
-  background-image: url("images/books_images/TheSleepers.jpg");
+  background-image: url("books_images/TheSleepers.jpg");
   background-size: cover;
 }
 
@@ -718,3 +318,328 @@ section {
   }
 
 }
+
+/* project */
+
+.container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* margin-top: 20%; */
+  background-image: url("images/bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.123)), url("images/bg.jpg");
+ 
+  /* background-size: cover; */
+  
+}
+.genre-bg{
+  height:25%;
+  width: 70%;
+  border-radius: 10px;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.144);
+  /* background-image: linear-gradient(to top, 70% rgba(0,0,0),80%rgba(0,0,0)); */
+ 
+  
+}
+.genre-content {
+  margin: 1% 0%;
+  display: flex;
+  padding: 10px;
+  white-space: nowrap;
+
+  height: 80%;
+  overflow-x: hidden;
+  backdrop-filter: blur(20px) brightness(0.9);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 0 40px rgba(0, 0, 0, 0.2), 0 0 0 5px rgba(255, 255, 255, 0.1) inset;
+  border-radius: 10px;
+  
+  
+}
+.genre-content:hover .genre {
+  animation-play-state: paused;
+}
+
+
+.genre {
+  border-radius: 5px;
+  
+  width: 20%;
+  height: 100%;
+  flex-shrink: 0; 
+  margin: 0 5px; 
+  border-radius: 7px;
+  
+  animation: scroll 25s linear  infinite  ;
+}
+@keyframes scroll {
+  0%{
+      transform: translateX(0%);
+  }
+  100%{
+      transform: translateX(calc(-1200% - 20px));
+  }
+  
+}
+.genre-name h3{
+  font-size: 1.2rem;
+}
+.genre-name{
+  color: white;
+  /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(5, 5, 5, 0));  */
+  background-color: rgba(0, 0, 0, 0.702);
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+}
+.genre-scifi{
+  background-image: url("images/scifi.jpg");
+  background-size: cover;
+}
+.genre-thriller{
+  background-image: url("images/thriller.jpg");
+  background-size: cover;
+}
+.genre-mangas{
+  background-image: url("images/manga.jpg");
+  background-size: cover;
+}
+.genre-fiction{
+  background-image: url("images/fiction.jpg");
+  background-size: cover;
+}
+.genre-romance{
+  background-image: url("images/mystery.jpg");
+  background-size: cover;
+}
+.genre-comics{
+  background-image: url("images/comic.jpg");
+  background-size: cover;
+}
+.genre-psychology{
+  background-image: url("images/psychology.jpg");
+  background-size: cover;
+}
+.genre-scifi{
+  background-image: url("images/scifi.jpg");
+  background-size: cover;
+}
+.genre-selfhelp{
+  background-image: url("images/self-help.jpg");
+  background-size: cover;
+}
+.genre-horror{
+  background-image: url("images/horror.jpg");
+  background-size: cover;
+}
+.genre-poetry{
+  background-image: url("images/poetry.jpg");
+  background-size: cover;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.btn{
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: 1px solid black;
+  background-color: transparent;
+  cursor: pointer;
+  margin-bottom: 100px;
+}
+
+.books{
+  height: 70vh;
+  width: 70%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1));
+  
+  backdrop-filter: blur(2px) brightness(0.9);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 0 40px rgba(0, 0, 0, 0.2), 0 0 0 5px rgba(255, 255, 255, 0.1) inset;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 20px;
+  transition: opacity 0.7s ease-in-out;
+  opacity: 0;
+  border-radius: 15px;
+  color: white;
+  justify-content: space-evenly;
+  position: relative; /* Ensure positioning context for book text */
+}
+
+.books.visible {
+  opacity: 1;
+}
+
+.book{
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  
+  background-color: rgba(0, 0, 0, 0.551); 
+  border-radius: 10px;
+  margin: 0px 30px;
+  margin-bottom: 25px;
+  position: relative; /* Ensure positioning context for absolute positioning */
+}
+
+.book img {
+  border-radius: 10px;
+}
+
+.booktext{
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-size: 0.85rem;
+  color: white;
+  width: 150px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  margin: 10px 10px;
+  border-radius: 5px;
+}
+.book {
+  position: relative;
+  overflow: hidden; /* Ensure the gradient doesn't overflow */
+  border-radius: 10px;
+}
+
+.book::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+  z-index: 1; /* Ensure the gradient is behind the text */
+}
+
+.section-4{
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+.glassWindow{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 70vh;
+  width: 70%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 15px solid rgba(0, 0, 0, 0.18);
+  box-shadow: 0 8px 32px 4px rgba(0, 0, 0, 0.37);
+
+}
+
+.this-container{
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  height: 70vh;
+  width: 100%;
+}
+
+.section-4-container{
+  flex: 0 0 100%;
+  display: flex;
+  height: 70vh;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.section-4-container img{
+  width: 20vw;
+  height: 50vh;
+}
+
+.section-4-container h3{
+  color: #241607;
+  text-shadow: 0 0 10px #bcaba1;
+}
+
+.section-4-container div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20vw;
+  margin-left: 5vw;
+}
+
+.section-4-container div p:nth-of-type(1){
+  color: #bcaba1;
+  text-shadow: 0 0 10px #bcaba1;
+  font-weight: 800;
+  font-size: 1vw;
+  text-align: right;
+  font-family: 'Playfair Display', serif;
+}
+
+.section-4-container div p:nth-of-type(2){
+  font-weight: 600;
+  text-shadow: 0 0 2px #ffffff;
+  color: #351a09
+}
+
+.nextButton{
+  justify-content: flex;
+  align-self: center;
+  width: 5vw;
+  height: 5vw;
+  color: #351a09;
+  background-color: #bcaba1;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.nextButton:hover{
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+
+.inside-section-4-container button{
+  all:unset;
+  text-align: center;
+  width: 10vw;
+  height: 3vw;
+  color: black;
+  margin-top: 1vw;
+  border-radius: 7%;
+  border: 2px solid #351a09;
+  background-color: #bcaba1;
+  color: #351a09;
+}
+
+.inside-section-4-container button:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.5s;
+  box-shadow: 0 0 10px 2.5px black;
+  border-radius: 0%;
+}
+

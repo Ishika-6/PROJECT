@@ -1,3 +1,19 @@
+var swiper = new Swiper('.swiper', {
+    effect: "cards",
+    grabCursor: true,
+    initialSlide: 2,
+    speed: 500,
+    loop: false,
+    rotate: true,
+    mousewheel: {
+    invert: false,
+  },
+  keyboard:{
+    enabled:true,
+    onlyInViewport: true,
+  }
+});
+
 const genreContent = document.querySelector('.genre-content');
         let scrollValue=0;
 
@@ -70,7 +86,7 @@ const bookDetails = {
         { name: 'Me Before You', image: 'images/genres/romance/mebeforeyou.jpg'},
         { name: 'The Fault in Our Stars', image: 'images/genres/romance/faultinourstars.jpg'},
     ],
-    psy: [
+    psychology: [
         { name: 'Thinking, Fast and Slow', image: 'images/genres/psy/thinkingfastandslow.jpg'},
         { name: 'The Power of Habit', image: 'images/genres/psy/powerofhabit.jpg'},
         { name: 'Blink', image: 'images/genres/psy/blink.jpg'},
@@ -120,7 +136,7 @@ const bookDetails = {
         { name: 'Astro City', image: 'images/genres/comics/astrocity.jpg'},
         { name: 'Sandman', image: 'images/genres/comics/sandman.jpg'},
     ],
-    manga: [
+    mangas: [
         { name: 'Naruto', image: 'images/genres/manga/naruto.jpg'},
         { name: 'One Piece', image: 'images/genres/manga/onepiece.jpg'},
         { name: 'Attack on Titan', image: 'images/genres/manga/attackontitan.jpg'},
@@ -160,7 +176,7 @@ buttons.forEach(button => {
                       button.classList.contains('genre-poetry') ? 'poetry' :
                       button.classList.contains('genre-selfhelp') ? 'selfhelp' :
                       button.classList.contains('genre-comics') ? 'comics' :
-                      button.classList.contains('genre-manga') ? 'manga' : '';
+                      button.classList.contains('genre-mangas') ? 'mangas' : '';
 
         // Update the books based on the selected genre
         updateBooks(genre);
@@ -177,6 +193,7 @@ buttons.forEach(button => {
         }, 500);
     });
 });
+
 let arr = Array.from(document.querySelectorAll('.section-4-container'));
 
 let counter = -100;
@@ -217,24 +234,4 @@ nextButton.addEventListener('click', () => {
     moveIt();
     iv1 = setInterval(moveIt, 3000);
 });
-import Swiper from "swiper"
-
-import 'swiper/css';
-var swiper = new Swiper('.swiper', {
-    effect: "cards",
-    grabCursor: true,
-    initialSlide: 2,
-    speed: 500,
-    loop: false,
-    rotate: true,
-    mousewheel: {
-    invert: false,
-  },
-  keyboard:{
-    enabled:true,
-    onlyInViewport: true,
-  }
-});
-
-
 
