@@ -294,11 +294,6 @@ $items.forEach((item, i) => {
 /*--------------------
 Handlers
 --------------------*/
-const handleWheel = e => {
-  const wheelProgress = e.deltaY * speedWheel
-  progress = progress + wheelProgress
-  animate()
-}
 
 const handleMouseMove = (e) => {
   if (e.type === 'mousemove') {
