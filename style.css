@@ -178,7 +178,7 @@
   
 }
 .genre-bg{
-  height:25%;
+  height:20%;
   width: 70%;
   border-radius: 10px;
   display: block;
@@ -296,7 +296,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 110vh;
   font-family: "Orelo SemiWide DemiBold";
 }
 
@@ -311,7 +311,7 @@
 }
 
 .books{
-  height: 70vh;
+  height: 80vh;
   width: 70%;
   background-image: linear-gradient(to bottom, #f1eada44,#f1eada2d);
   
@@ -320,7 +320,7 @@
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding: 20px;
+  padding: 30px 20px 0px 20px;
   transition: opacity 0.7s ease-in-out;
   opacity: 0;
   border-radius: 15px;
@@ -350,16 +350,10 @@
 }
 
 .booktext{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 0.7rem;
   color: black;
-  width: 150px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  
-  margin: 10px 10px;
-  border-radius: 5px;
+  margin-top: 5px;
 }
 .book {
   position: relative;
