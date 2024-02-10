@@ -561,10 +561,10 @@
   height: 70vh;
   width: 70%;
   /* background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)); */
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(10px);
   /* border-radius: 10px; */
-  /* border: 15px solid rgba(0, 0, 0, 0.18); */
+  border: 2px solid rgba(0, 0, 0, 0.315);
   box-shadow: 0 8px 32px 4px rgba(0, 0, 0, 0.37);
 
 }
@@ -579,7 +579,7 @@
 
 .section-4-container{
   flex: 0 0 100%;
-  display: flex;
+  display: flex;  
   height: 70vh;
   align-items: center;
   justify-content: space-around;
