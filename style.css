@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  /* font-family: 'Comfortaa', cursive; */
-}
+@import url(https://db.onlinewebfonts.com/c/0da4520eba0e03f116ad37c743fd3ffa?family=Orelo+SemiWide+DemiBold);
 
 .main{
   position: relative;
@@ -20,314 +12,157 @@
 
 }
 
-.kukreja {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: 	#dbd0c4;
-  min-height: 100vh;
-  overflow: hidden;
-  color: 	#301801;
-}
-
-
-
-.content {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; 
-  height: 100%;
-  gap: 30px;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.28) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  backdrop-filter: blur(30px);
-  border-radius: 20px;
-  width: min(900px, 100%);
-  box-shadow: 0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset, 0 1px 0 0 rgba(255, 255, 255, 0.66) inset, 0 4px 16px rgba(0, 0, 0, 0.12);
-  z-index: 10;
-}
-
-.info {
-  display:flex;
-  height: 100%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 450px;
-  padding: 0 35px;
-  text-align: justify;
-  padding: 20px;
-}
-.info h2{
-  color: #201001;
-  margin-top: 35px;
-  margin-bottom: 20px;
-  font-size: 2rem;
-}
-
-.info p{
-  color: 	#201001;
-  font-weight: 500;
-  font-size: 1.1rem;
-  margin-bottom: 20px;
-  margin-left: 25px;
-  margin-right: 25px;
-}
-
-/* .Book-night {
-  background: linear-gradient(225deg, #ff3cac 0%, #784ba0 50%, #2b86c5 100%);
-} */
-
-.btn {
-  display: block;
-  /* padding: 40px 40px; */
-  width: 6rem;
-  margin-top: 40px;
-  font-size: 1.1rem;
-  font-weight: 700;
-  border-radius: 4px;
-  outline: none;
-  text-decoration: none;
-  color: #201001;
-  background: rgba(255, 255, 255, 0.9);
-  box-shadow: 20px 6px 30px rgba(0, 0, 0, 0.1);
-  /* border: 1px solid rgba(255, 255, 255, 0.3); */
-  cursor: pointer;
-}
-
-.btn:hover, .btn:focus, .btn:active, .btn:visited {
-    transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
-    animation: gelatine 0.5s 1;
-}
-
-@keyframes gelatine {
+  .carl{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Roboto', serif;
+    background: linear-gradient(135deg, #B79891, #94716B);
+  }
   
-  0%, 100% {
-    transform: scale(1, 1);
+  .ontop{
+    font-family: "Orelo SemiWide DemiBold";
+    position: absolute;
+    color: #fff;
+    /* bottom: 10%; */
+    top:170%;
+    left: 10vw;
+    z-index: 1;
+    width: 50%;
+    text-justify: distribute-all-lines;
+  
   }
-  25% {
-    transform: scale(0.9, 1.1);
-  }
-  50% {
-    transform: scale(1.1, 0.9);
-  }
-  75% {
-    transform: scale(0.95, 1.05);
-  }
-}
-
-/* SWIPER */
-
-.swiper {
-  width: 250px;
-  height: 450px;
-  padding: 50px 0;
-}
-
-.swiper-slide {
-  position: relative;
-  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-}
-
-.swiper-slide span {
-  display:none;
-}
-
-.swiper-slide h2 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  color: #fff;
-  font-weight: 400;
-  font-size: 1.1rem;
-  line-height: 1.4;
-  margin: 0 0 20px 20px;
-}
-
-.swiper-slide:nth-child(1n) {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("./books_images/CavenoughTower.jpg")
-      no-repeat 50% 50% / cover;
-}
-
-.swiper-slide:nth-child(2n) {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("books_images/GloriaVaeVictis.jpg")
-      no-repeat 50% 50% / cover;
-}
-
-.swiper-slide:nth-child(3n) {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("books_images/HerClaim.jpg")
-      no-repeat 50% 0% / cover;
-}
-
-.swiper-slide:nth-child(4n) {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("books_images/LivingAWillian.jpg")
-      no-repeat 50% 50% / cover;
-}
-
-.swiper-slide:nth-child(5n) {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("books_images/SummonSecondChance.jpg")
-      no-repeat 50% 50% / cover;
-}
-
-.swiper-slide:nth-child(6n) {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("books_images/TalonTheBlack.jpg")
-      no-repeat 50% 50% / cover;
-}
-
-.swiper-slide:nth-child(7n) {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("books_images/TheLeague.jpg")
-      no-repeat 50% 50% / cover;
-}
-
-.swiper-slide:nth-child(8n) {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("books_images/TheSleepers.jpg")
-      no-repeat 50% 0% / cover;
-}
-
-.swiper-slide:nth-child(9n) {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("books_images/TiedToYou.jpg")
-      no-repeat 50% 50% / cover;
-}
-
-/* ANIMATED BACKGROUND */
-
-.circles{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.circles li{
-  position: absolute;
-  display: block;
-  list-style: none;
-  width: 100px;
-  height: 100px;
-  /* background-color: #ff3cac;
-  background-image: linear-gradient(225deg, #ff3cac 0%, #784ba0 50%, #2b86c5 100%); */
-  animation: animate 25s linear infinite;
-  bottom: -150px;
-}
-
-.circles li:nth-child(1){
-  left: 25%;
-  width: 80px;
-  height: 80px;
-  background-image: url("books_image/TheLeague");
-  background-size: cover;
-  animation-delay: 0s;
-}
-
-.circles li:nth-child(2){
-  left: 10%;
-  width: 20px;
-  height: 20px;
-  animation-delay: 2s;
-  animation-duration: 12s;
-  background-image: url("books_images/TalonTheBlack.jpg");
-  background-size: cover;
-}
-
-.circles li:nth-child(3){
-  left: 70%;
-  width: 20px;
-  height: 20px;
-  animation-delay: 4s;
-  background-image: url("books_images/HerClaim.jpg");
-  background-size: cover;
-}
-
-.circles li:nth-child(4){
-  left: 40%;
-  width:60px;
-  height: 60px;
-  animation-delay: 0s;
-  background-image: url("books_images/SummonSecondChance.jpg");
-  background-size: cover;
-  animation-duration: 18s;
-}
-
-.circles li:nth-child(5){
-  left: 65%;
-  width: 20px;
-  height: 20px;
-  background-image: url("books_images/TalonTheBlack.jpg");
-  background-size: cover;
-  animation-delay: 0s;
-}
-
-.circles li:nth-child(6){
-  left: 75%;
-  width: 110px;
-  height: 110px;
-  background-image: url("books_images/LivingAWillian.jpg");
-  background-size: cover;
-  animation-delay: 3s;
-}
-
-.circles li:nth-child(7){
-  left: 35%;
-  width: 150px;
-  height: 150px;
-  background-image: url("books_images/HerClaim.jpg");
-  background-size: cover;
-  animation-delay: 7s;
-}
-
-.circles li:nth-child(8){
-  left: 50%;
-  width: 25px;
-  height: 25px;
-  animation-delay: 1s;
-  animation-duration: 45s;
-  background-image: url("books_images/GloriaVaeVictis.jpg");
-  background-size: cover;
-}
-
-.circles li:nth-child(9){
-  left: 20%;
-  width: 60px;
-  height: 60px;
-  animation-delay: 2s;
-  animation-duration: 35s;
-  background-image: url("books_images/CavenoughTower.jpg");
-  background-size: cover;
-}
-
-.circles li:nth-child(10){
-  left: 85%;
-  width: 150px;
-  height: 150px;
-  animation-delay: 0s;
-  animation-duration: 11s;
-  background-image: url("books_images/TheSleepers.jpg");
-  background-size: cover;
-}
-
-@keyframes animate {
-
-  0%{
-    transform: translateY(0) rotate(0deg);
-    opacity: 1;
-    border-radius: 0;
+  @media (max-width:1000px) {
+    .ontop{
+      left: 5vw;
+      bottom: 2%;
+    }
   }
 
-  100%{
-    transform: translateY(-1000px) rotate(720deg);
-    opacity: 0;
-    border-radius: 50%;
+  .carousel {
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    overflow: hidden;
+    pointer-events: none;
   }
+  
+  .carousel-item {
+    --items: 10;
+    --width: clamp(150px, 30vw,  300px);
+    --height: clamp(200px, 40vw,  400px);
+    --x: calc(var(--active) * 800%);
+    --y: calc(var(--active) * 200%);
+    --rot: calc(var(--active) * 120deg);
+    --opacity: calc(var(--zIndex) / var(--items) * 3 - 2);
+    overflow: hidden;
+    position: absolute;
+    z-index: var(--zIndex);
+    width: var(--width);
+    height: var(--height);
+    margin: calc(var(--height) * -0.5) 0 0 calc(var(--width) * -0.5);
+    border-radius: 10px;
+    top: 50%;
+    left: 75%;
+    user-select: none;
+    transform-origin: 0% 100%;
+    box-shadow: 0 10px 50px 10px rgba(0, 0, 0, .5);
+    background: black;
+    pointer-events: all;
+    transform:  translate(var(--x), var(--y)) rotate(var(--rot)) ;
+    transition: transform .8s cubic-bezier(0, 0.02, 0, 1);
+  
+    .carousel-box {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: opacity .8s cubic-bezier(0, 0.02, 0, 1);
+      opacity: var(--opacity);
+      font-family: "Orelo SemiWide DemiBold", serif;
+  
+      &:before {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .5));
+      }
+    }
+  
+    .book-title {
+      position: absolute;
+      z-index: 1;
+      color: #fff;
+      bottom: 20px;
+      left: 20px;
+      transition: opacity .8s cubic-bezier(0, 0.02, 0, 1);
+      font-size: clamp(20px, 3vw, 30px);
+      text-shadow: 0 4px 4px rgba(0, 0, 0, .1);
+    }
+  
+    .num {
+      position: absolute;
+      z-index: 1;
+      color: #fff;
+      top: 10px;
+      left: 20px;
+      transition: opacity .8s cubic-bezier(0, 0.02, 0, 1);
+      font-size: clamp(20px, 10vw, 80px);
+    }
+  
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  .layout {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 90px;
+      width: 10px;
+      height: 100%;
+      border: 1px solid #fff;
+      border-top: none;
+      border-bottom: none;
+      opacity: .15;
+    }
+  
+    .box {
+      position: absolute;
+      bottom: 0;
+      left: 30px;
+      color: #fff;
+      transform-origin: 0% 10%;
+      transform: rotate(-90deg);
+      font-size: 9px;
+      line-height: 1.4;
+      text-transform: uppercase;
+      opacity: .4;
+    }
+  }
+  
+  
+  
 
-}
 
 /* project */
 
