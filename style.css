@@ -336,8 +336,8 @@
   display: flex;
   justify-content: center;
   /* margin-top: 20%; */
-  background-image: url("images/bg.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.123)), url("images/bg.jpg");
+  background-image: url("images/BookReader.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.123)), url("images/BookReader.png");
  
   /* background-size: cover; */
   
@@ -347,8 +347,8 @@
   width: 70%;
   border-radius: 10px;
   display: block;
-  background-color: rgba(0, 0, 0, 0.144);
-  /* background-image: linear-gradient(to top, 70% rgba(0,0,0),80%rgba(0,0,0)); */
+  /* background-color: rgba(252, 250, 250, 0.144); */
+  background-image: linear-gradient(to top, 70% rgba(0,0,0),80%rgba(0,0,0));
  
   
 }
@@ -361,7 +361,7 @@
   height: 80%;
   overflow-x: hidden;
   backdrop-filter: blur(20px) brightness(0.9);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 0 40px rgba(0, 0, 0, 0.2), 0 0 0 5px rgba(255, 255, 255, 0.1) inset;
+  /* box-shadow: 0 10px 20px black, 0 0 40px rgba(0, 0, 0, 0.2), 0 0 0 5px rgba(255, 255, 255, 0.1) inset; */
   border-radius: 10px;
   
   
@@ -396,8 +396,8 @@
 }
 .genre-name{
   color: white;
-  /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(5, 5, 5, 0));  */
-  background-color: rgba(0, 0, 0, 0.702);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(5, 5, 5, 0)); 
+  background-color: rgba(0, 0, 0, 0.575);
   height: 100%;
   width: 100%;
   padding: 0px;
@@ -479,10 +479,10 @@
 .books{
   height: 70vh;
   width: 70%;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1));
+  background-image: linear-gradient(to bottom, #f1eada44,#f1eada2d);
   
   backdrop-filter: blur(2px) brightness(0.9);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 0 40px rgba(0, 0, 0, 0.2), 0 0 0 5px rgba(255, 255, 255, 0.1) inset;
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 0 40px rgba(0, 0, 0, 0.2), 0 0 0 5px rgba(255, 255, 255, 0.1) inset; */
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -490,7 +490,7 @@
   transition: opacity 0.7s ease-in-out;
   opacity: 0;
   border-radius: 15px;
-  color: white;
+  color: rgb(63, 38, 24);
   justify-content: space-evenly;
   position: relative; /* Ensure positioning context for book text */
 }
@@ -504,7 +504,7 @@
   background-position: center;
   text-align: center;
   
-  background-color: rgba(0, 0, 0, 0.551); 
+  background-color:#f1eada37; 
   border-radius: 10px;
   margin: 0px 30px;
   margin-bottom: 25px;
@@ -516,9 +516,9 @@
 }
 
 .booktext{
-  font-family: 'Be Vietnam Pro', sans-serif;
-  font-size: 0.85rem;
-  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: black;
   width: 150px;
   position: absolute;
   left: 50%;
@@ -540,7 +540,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+  /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%); */
   z-index: 1; /* Ensure the gradient is behind the text */
 }
 
