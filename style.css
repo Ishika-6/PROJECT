@@ -549,6 +549,7 @@
   align-items: center;
   height: 100vh;
   justify-content: center;
+  background-color: #f1eada;
 }
 
 .glassWindow{
@@ -558,10 +559,10 @@
   height: 70vh;
   width: 70%;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 20px;
-  border: 15px solid rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  /* border: 15px solid rgba(0, 0, 0, 0.18); */
   box-shadow: 0 8px 32px 4px rgba(0, 0, 0, 0.37);
 
 }
