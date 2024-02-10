@@ -184,9 +184,8 @@
   display: block;
   /* background-color: rgba(252, 250, 250, 0.144); */
   background-image: linear-gradient(to top, 70% rgba(0,0,0),80%rgba(0,0,0));
- 
-  
 }
+
 .genre-content {
   margin: 1% 0%;
   display: flex;
@@ -198,7 +197,6 @@
   backdrop-filter: blur(20px) brightness(0.9);
   /* box-shadow: 0 10px 20px black, 0 0 40px rgba(0, 0, 0, 0.2), 0 0 0 5px rgba(255, 255, 255, 0.1) inset; */
   border-radius: 10px;
-  
   
 }
 .genre-content:hover .genre {
@@ -227,7 +225,7 @@
   
 }
 .genre-name h3{
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 .genre-name{
   color: white;
