@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
 @import url(https://db.onlinewebfonts.com/c/0da4520eba0e03f116ad37c743fd3ffa?family=Orelo+SemiWide+DemiBold);
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
 
 .main{
   position: relative;
@@ -371,6 +372,94 @@
   /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%); */
   z-index: 1; /* Ensure the gradient is behind the text */
 }
+
+/*Section for how it works CSS*/
+body {
+  margin: 0;
+  padding: 0;
+  background: lightgoldenrodyellow;
+}
+
+.cont-paper-text{
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center-paper-text{
+  text-align: center;
+  font-family: 'Indie Flower';
+}
+
+.cont-papers{
+  display: flex;
+  justify-content: center;
+  height: 60vh;
+  width: 100%;
+  gap: 20px;
+}
+
+.paper {
+  position: relative;
+  height: 300px;
+  width: 450px;
+  background: rgba(255,255,255,0.9);
+  box-shadow: 0px 0px 5px 0px #888;
+}
+
+.paper::before {
+  content: '';
+  position: absolute;
+  left: 45px;
+  height: 100%;
+  width: 2px;
+  background: rgba(255,0,0,0.4);
+}
+.lines {
+  margin-top: 40px;
+  height: calc(100% - 40px);
+  width: 100%;
+  background-image: repeating-linear-gradient(white 0px, white 24px, steelblue 25px);
+}
+.text {
+  position: absolute;
+  top: 65px;
+  left: 55px;
+  bottom: 10px;
+  right: 10px;
+  line-height: 25px;
+  font-family: 'Indie Flower';
+  overflow: hidden;
+  outline: none;
+}
+.holes {
+  position: absolute;
+  left: 10px;
+  height: 25px;
+  width: 25px;
+  background: lightgoldenrodyellow;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 2px 0px #888;
+}
+.hole-top {
+  top: 10%;
+}
+.hole-middle {
+  top: 50%;
+}
+.hole-bottom {
+  bottom: 10%;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
 
 .section-4{
   display: flex;
