@@ -452,15 +452,6 @@ body {
   bottom: 10%;
 }
 
-.container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100%;
-}
-
-
 .section-4{
   display: flex;
   align-items: center;
@@ -469,105 +460,8 @@ body {
   background-color: #f1eada;
 }
 
-.glassWindow{
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  height: 70vh;
+.section-4 iframe{
   width: 70%;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-radius: 10px;
-  /* border: 15px solid rgba(0, 0, 0, 0.18); */
-  box-shadow: 0 8px 32px 4px rgba(0, 0, 0, 0.37);
-
-}
-
-.this-container{
-  display: flex;
-  overflow: hidden;
-  align-items: center;
-  height: 70vh;
-  width: 100%;
-}
-
-.section-4-container{
-  flex: 0 0 100%;
-  display: flex;
-  height: 70vh;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.section-4-container img{
-  width: 20vw;
-  height: 50vh;
-}
-
-.section-4-container h3{
-  color: #241607;
-  text-shadow: 0 0 10px #bcaba1;
-}
-
-.section-4-container div{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 20vw;
-  margin-left: 5vw;
-}
-
-.section-4-container div p:nth-of-type(1){
-  color: #bcaba1;
-  text-shadow: 0 0 10px #bcaba1;
-  font-weight: 800;
-  font-size: 1vw;
-  text-align: right;
-  font-family: 'Playfair Display', serif;
-}
-
-.section-4-container div p:nth-of-type(2){
-  font-weight: 600;
-  text-shadow: 0 0 2px #ffffff;
-  color: #351a09
-}
-
-.nextButton{
-  justify-content: flex;
-  align-self: center;
-  width: 5vw;
-  height: 5vw;
-  color: #351a09;
-  background-color: #bcaba1;
-  border-radius: 50%;
-  transition: 0.5s;
-}
-
-.nextButton:hover{
-  border-radius: 10%;
-  cursor: pointer;
-}
-
-
-.inside-section-4-container button{
-  all:unset;
-  text-align: center;
-  width: 10vw;
-  height: 3vw;
-  color: black;
-  margin-top: 1vw;
-  border-radius: 7%;
-  border: 2px solid #351a09;
-  background-color: #bcaba1;
-  color: #351a09;
-}
-
-.inside-section-4-container button:hover{
-  cursor: pointer;
-  transform: scale(1.1);
-  transition: 0.5s;
-  box-shadow: 0 0 10px 2.5px black;
-  border-radius: 0%;
+  height: 80vh;
 }
 

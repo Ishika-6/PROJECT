@@ -194,49 +194,6 @@ buttons.forEach(button => {
     });
 });
 
-let arr = Array.from(document.querySelectorAll('.section-4-container'));
-
-let counter = -100;
-let isAnimating = false; 
-
-let iv1 = setInterval(moveIt, 3000);
-
-function moveIt() {
-    if (isAnimating) {
-        return;
-    }
-
-    isAnimating = true;
-    
-    arr.forEach((cont) => {
-        cont.style.transition = 'transform ' + 1.5 + 's ease-in-out';
-        cont.style.transform = 'translateX(' + counter + '%)';
-    });
-
-    counter -= 100;
-
-    if (counter < -600) {
-        arr.forEach((cont) => {
-            cont.style.transition = 'transform 0s';
-            cont.style.transform = 'translateX(' + 0 + '%)';
-        });
-
-        counter = 0;
-    }
-
-    isAnimating = false;
-}
-
-let nextButton = document.querySelector('.nextButton');
-
-nextButton.addEventListener('click', () => {
-    clearInterval(iv1);
-    moveIt();
-    iv1 = setInterval(moveIt, 3000);
-});
-
-
-
 // Book animation
 
 /*--------------------
