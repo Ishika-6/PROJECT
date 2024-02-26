@@ -171,14 +171,6 @@ function loadApp() {
        }
    });
 
-   // Zoom event
-
-   if ($.isTouch)
-       $('.magazine-viewport').bind('zoom.doubleTap', zoomTo);
-   else
-       $('.magazine-viewport').bind('zoom.tap', zoomTo);
-
-
    // Using arrow keys to turn the page
 
    $(document).keydown(function(e){
