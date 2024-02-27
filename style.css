@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
 @import url(https://db.onlinewebfonts.com/c/0da4520eba0e03f116ad37c743fd3ffa?family=Orelo+SemiWide+DemiBold);
 @import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 .main{
   position: relative;
@@ -12,7 +14,6 @@
   overflow: hidden;
 
 }
-
   .carl{
     height: 100vh;
     width: 100%;
@@ -160,220 +161,230 @@
       opacity: .4;
     }
   }
-  
-  
-  
 
-
-/* project */
-
-.container{
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  /* margin-top: 20%; */
-  background-image: url("images/BookReader.png");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.123)), url("images/BookReader.png");
- 
-  /* background-size: cover; */
-  
+/* ISHIKA PART iske neeche saare sahi hai*/
+@font-face {
+  font-family: 'Brittany Signature';
+  src: url('fonts/BrittanySignatureRegular.woff2') format('woff2'),
+  url('fonts/BrittanySignatureRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
-.genre-bg{
-  height:20%;
-  width: 70%;
-  border-radius: 10px;
-  display: block;
-  /* background-color: rgba(252, 250, 250, 0.144); */
-  background-image: linear-gradient(to top, 70% rgba(0,0,0),80%rgba(0,0,0));
+.swiper-wrapper{
 }
 
-.genre-content {
-  margin: 1% 0%;
-  display: flex;
-  padding: 10px;
-  white-space: nowrap;
-
-  height: 80%;
-  overflow-x: hidden;
-  backdrop-filter: blur(20px) brightness(0.9);
-  /* box-shadow: 0 10px 20px black, 0 0 40px rgba(0, 0, 0, 0.2), 0 0 0 5px rgba(255, 255, 255, 0.1) inset; */
-  border-radius: 10px;
-  
-}
-.genre-content:hover .genre {
-  animation-play-state: paused;
-}
-
-
-.genre {
-  border-radius: 5px;
-  
-  width: 20%;
-  height: 100%;
-  flex-shrink: 0; 
-  margin: 0 5px; 
-  border-radius: 7px;
-  
-  animation: scroll 25s linear  infinite  ;
-}
-@keyframes scroll {
-  0%{
-      transform: translateX(0%);
-  }
-  100%{
-      transform: translateX(calc(-1200% - 20px));
-  }
-  
-}
-.genre-name h3{
-  font-size: 1.5rem;
-}
-.genre-name{
-  color: white;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(5, 5, 5, 0)); 
-  background-color: rgba(0, 0, 0, 0.575);
-  height: 100%;
-  width: 100%;
-  padding: 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 7px;
-}
-.genre-scifi{
-  background-image: url("images/scifi.jpg");
-  background-size: cover;
-}
-.genre-thriller{
-  background-image: url("images/thriller.jpg");
-  background-size: cover;
-}
-.genre-mangas{
-  background-image: url("images/manga.jpg");
-  background-size: cover;
-}
-.genre-fiction{
-  background-image: url("images/fiction.jpg");
-  background-size: cover;
-}
-.genre-romance{
-  background-image: url("images/mystery.jpg");
-  background-size: cover;
-}
-.genre-comics{
-  background-image: url("images/comic.jpg");
-  background-size: cover;
-}
-.genre-psychology{
-  background-image: url("images/psychology.jpg");
-  background-size: cover;
-}
-.genre-scifi{
-  background-image: url("images/scifi.jpg");
-  background-size: cover;
-}
-.genre-selfhelp{
-  background-image: url("images/self-help.jpg");
-  background-size: cover;
-}
-.genre-horror{
-  background-image: url("images/horror.jpg");
-  background-size: cover;
-}
-.genre-poetry{
-  background-image: url("images/poetry.jpg");
-  background-size: cover;
-}
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+.genre-head h1{
+  /* padding: 1rem; */
+  padding-top: 1.5rem;
 
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+}
+.section-genres{
+  height: 100vh;
+  background-color: #fe8003;
+}
+.genre-head{
+  color: white;
+  font-size: 2rem;
+  font-family: 'Brittany Signature';
+  margin-left: 7.7%;
+  padding-top: 2rem;
+  /* padding-top: 2%; */
+}
 
-.container{
+.hero-element{
+  height: 120px;
+  position:relative;
+  top: 110px;
+
+}
+.sample-slider{
+
+  width:300px;
+  height: 430px;
+  border-radius: 10px;
+}
+.swiper-hero{
+  position: absolute;
+  top:-30px;
+  left: 10%;
+}
+.slide1{
+  background-image: url("images/genres/romance/spanishlovedeception.jpg");
+}
+.slide2{
+  background-image: url("images/genres/horror/conjuring.jpeg");
+}
+.slide3{
+  background-image: url("images/genres/poetry/leavesofgrass.jpg");
+}
+.slide4{
+  background-image: url("images/genres/thriller/inferno.jpg");
+}
+.swiper-slide{
+  background-size: cover;
+  border-radius: 10px;
+
+
+}
+.swiper-grad h1{
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 110vh;
-  font-family: "Orelo SemiWide DemiBold";
+  justify-content: center;
+  font-size: 3rem;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.634));
+  border-radius: 10px;
 }
+.book-grad{
+  height: 100%;
+  /* background-image: linear-gradient(to bottom , rgba(0, 0, 0, 0.428),  rgba(0, 0, 0, 0.733)); */
+  border-radius: 10px;
+  border: 2px solid  #fcf4f1;
 
-.btn{
-  font-family: 'Be Vietnam Pro', sans-serif;
-  font-size: 1rem;
-  padding: 10px 20px;
-  border: 1px solid black;
-  background-color: transparent;
-  cursor: pointer;
-  margin-bottom: 100px;
 }
-
-.books{
-  height: 80vh;
-  width: 70%;
-  background-image: linear-gradient(to bottom, #f1eada44,#f1eada2d);
-  
-  backdrop-filter: blur(2px) brightness(0.9);
-  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 0 40px rgba(0, 0, 0, 0.2), 0 0 0 5px rgba(255, 255, 255, 0.1) inset; */
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding: 30px 20px 0px 20px;
-  transition: opacity 0.7s ease-in-out;
-  opacity: 0;
-  border-radius: 15px;
-  color: rgb(63, 38, 24);
-  justify-content: space-evenly;
-  position: relative; /* Ensure positioning context for book text */
+.swiper-grad{
+  height: 100%;
+  border-radius: 10px;
+  /* background-image: linear-gradient(to bottom , rgba(0, 0, 0, 0.582), black); */
+  border: 2px solid  #fcf4f1;
+  font-family: 'Orelo SemiWide DemiBold';
 }
-
-.books.visible {
-  opacity: 1;
+.swiper-button-prev{
+  color: #ffbfa5;
 }
-
 .book{
   background-size: cover;
-  background-position: center;
-  text-align: center;
-  
-  /* background-color:#f1eada37;  */
-  border-radius: 10px;
-  margin: 0px 30px;
-  margin-bottom: 25px;
-  position: relative; /* Ensure positioning context for absolute positioning */
 }
-
-.book img {
-  border-radius: 10px;
-}
-
-.booktext{
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 0.7rem;
-  color: black;
-  margin-top: 5px;
-}
-.book {
-  position: relative;
-  overflow: hidden; /* Ensure the gradient doesn't overflow */
-  border-radius: 10px;
-}
-
-.book::after {
-  content: '';
+.book1{
+  background-image: url(images/genres/romance/itendswithus.jpg);
+  height: 240px;
+  width: 170px;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%); */
-  z-index: 1; /* Ensure the gradient is behind the text */
+  left: 38%;
+  background-size: cover;
+  top: 82%;
+  border-radius: 10px;
+
+}
+.book2{
+  background-image: url(images/genres/romance/faultinourstars.jpg);
+  height: 150px;
+  width: 110px;
+  position: absolute;
+  left: 51%;
+  background-size: cover;
+  top: 60%;
+  border-radius: 10px;
+}
+.book3{
+  background-image: url(images/genres/romance/hardwired.jpg);
+  height: 150px;
+  width: 110px;
+  position: absolute;
+  left: 51%;
+  background-size: cover;
+  top: 200%;
+  border-radius: 10px;
+}
+.book4{
+  background-image: url(images/genres/romance/fiftyshades.jpg);
+  height: 230px;
+  width: 160px;
+  position: absolute;
+  left: 60%;
+  background-size: cover;
+  top: 110%;
+  border-radius: 10px;
+}
+.book5{
+  background-image: url(images/genres/romance/twilight.jpg);
+  height: 330px;
+  width: 200px;
+  position: absolute;
+  left: 72%;
+  background-size: cover;
+  top: 53%;
+  border-radius: 10px;
+}
+.genre-quote{
+  position: absolute;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-style: italic;
+  top: -20%;
+  width: 48%;
+  left: 38%;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 15px;
+}
+@keyframes changeBooks1 {
+  0%, 100% { background-image: url(images/genres/romance/itendswithus.jpg); }
+  25% { background-image: url(images/genres/horror/psycho.jpg); }
+  50% { background-image: url(images/genres/poetry/greencardgirl.jpg); }
+  75% { background-image: url(images/genres/thriller/oneofthegoodguys.jpg); }
 }
 
-/*Section for how it works CSS*/
+@keyframes changeBooks2 {
+  0%, 100% { background-image: url(images/genres/romance/faultinourstars.jpg); }
+  25% { background-image: url(images/genres/horror/theinvogations.jpg); }
+  50% { background-image: url(images/genres/poetry/whatyourefusetoremember.jpg); }
+  75% { background-image: url(images/genres/thriller/whereyouend.jpg); }
+}
+
+@keyframes changeBooks3 {
+  0%, 100% { background-image: url(images/genres/romance/hardwired.jpg); }
+  25% { background-image: url(images/genres/horror/whereyouend.jpg); }
+  50% { background-image: url(images/genres/poetry/lifefucksmeeveryday.jpg); }
+  75% { background-image: url(images/genres/thriller/womanontheledge.jpg); }
+}
+
+@keyframes changeBooks4 {
+  0%, 100% { background-image: url(images/genres/romance/fiftyshades.jpg); }
+  25% { background-image: url(images/genres/horror/aplaceforvanishing.jpg); }
+  50% { background-image: url(images/genres/poetry/historyofhalfbirds.jpg); }
+  75% { background-image: url(images/genres/thriller/searchparty.jpg); }
+}
+
+@keyframes changeBooks5 {
+  0%, 100% { background-image: url(images/genres/romance/twilight.jpg); }
+  25% { background-image: url(images/genres/horror/midnightofbeckonstreet.jpg); }
+  50% { background-image: url(images/genres/poetry/resurrections.jpg); }
+  75% { background-image: url(images/genres/thriller/northwoods.jpg); }
+}
+
+.book1 {
+  animation: changeBooks1 20s infinite;
+}
+
+.book2 {
+  animation: changeBooks2 20s infinite;
+}
+
+.book3 {
+  animation: changeBooks3 20s infinite;
+}
+
+.book4 {
+  animation: changeBooks4 20s infinite;
+}
+
+.book5 {
+  animation: changeBooks5 20s infinite;
+}
+
+/*END*/
+
+
+/*Section for how it works CSS iske neeche saare sahi hai*/
 body {
   margin: 0;
   padding: 0;
