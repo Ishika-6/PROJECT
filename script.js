@@ -26,7 +26,7 @@ const displayItems = (item, index, active) => {
 Animate
 --------------------*/
 
-let progress = 0
+let progress = 50
 const animate = () => {
   progress = Math.max(0, Math.min(progress, 100))
   active = Math.floor(progress/100*($items.length-1))
