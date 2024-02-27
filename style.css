@@ -19,7 +19,8 @@
     width: 100%;
     overflow: hidden;
     font-family: 'Roboto', serif;
-    background: linear-gradient(135deg, #B79891, #94716B);
+    /*background: linear-gradient(135deg, #B79891, #94716B);*/
+    background: linear-gradient(135deg, #ef233c, #ef233c);
   }
   
   .ontop{
@@ -388,7 +389,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: lightgoldenrodyellow;
+  background: #0466c8;
 }
 
 .cont-paper-text{
@@ -401,6 +402,7 @@ body {
 .center-paper-text{
   text-align: center;
   font-family: 'Indie Flower';
+  color: white;
 }
 
 .cont-papers{
