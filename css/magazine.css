@@ -2,8 +2,7 @@ body{
 	overflow:hidden;
 	margin: 0;
 	padding:0;
-	background-image: url("../pages/BookReader.png");
-	background-size: cover;
+	background-color: #aacc00;
 }
 
 
