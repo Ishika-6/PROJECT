@@ -3,17 +3,315 @@
 @import url(https://fonts.googleapis.com/css?family=Indie+Flower);
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-.main{
-  position: relative;
+/* main begin ------------------------------------------------------------------- */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-section{
+  height: 100vh;
+  width: 100%;
+  background-color: #f46060;
+  /* background-color: #4397e8; */
+  color: white;
   display: flex;
   justify-content: center;
+  animation: bg-change 10s linear  infinite ;
+  /* animation-timing-function: steps(5, start); */
+}
+.main-title{
+  font-size: 1.55rem;
+  text-align: center;
+  width: 60%;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  margin-top: 1.2rem;
+  
+}
+.main-title h1{
+  font-family: 'Brittany Signature';
+  padding: 2rem;
+}
+.main-buttons{
+  background: none;
+  display: flex;
   align-items: center;
-  background: beige;
-  min-height: 100vh;
-  overflow: hidden;
+  justify-content: center;
+}
+.main-buttons button{
+  width: 9rem;
+  height: 2.5rem;
+  margin: 1.3rem;
+  border-radius: 5px;
+  border: 1px solid white;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  /* animation on hover */
+  transition: all 0.5s ease;
+}
+.main-buttons button:hover{
+  background-color: white;
+  cursor: pointer;
+  scale: 1.1;
+}
+
+
+.animation-elements{
+  position: relative;
+  /* height: 100vh; */
+}
+.left-heart img{
+  height: 8rem;
+  width: 8rem;
+  background-size: cover;
+  position: absolute;
+  bottom: 20rem;
+  left: -68rem;
+  position: absolute;
+  transform: rotate(10deg);
+ 
+}
+.right-heart img{
+  height: 6rem;
+  width: 6rem;
+  background-size: cover;
+  position: absolute;
+  bottom: 10rem;
+  right: -10rem;
+  position: absolute;
+  transform: rotate(-30deg);
+
+  
+}
+
+.book img{
+  height: 22rem;
+  width: 25rem;
+  background-size: cover;
+  position: absolute;
+  bottom: 0px;
+  right: 16rem;
+  position: absolute;
 
 }
+.bluebook img{
+  
+  height: 22rem;
+  width: 25rem;
+  background-size: cover;
+  position: absolute;
+  bottom: 0px;
+  right: 16rem;
+  position: absolute;
+  
+  
+}
+.right-flower img{
+  height: 8rem;
+  width: 8rem;
+  position: absolute;
+  bottom: 20rem;
+  right: -6rem;
+  position: absolute;
+  /* transform: rotate(-30deg); */
+ 
+}
+.left-flower img{
+  height: 4.5rem;
+  width: 4.5rem;
+  position: absolute;
+  bottom: 17rem;
+  left: -52rem;    
+}
+.right-choco img{
+  height: 9.5rem;
+  width: 9.5rem;
+  position: absolute;
+  bottom: 3rem;
+  right: 0rem;
+  position: absolute;
+  /* transform: rotate(-30deg); */
+ 
+}
+.left-cloud img{
+  height: 12rem;
+  width: 12rem;
+  position: absolute;
+  bottom: 3rem;
+  left: -62rem;    
+}
+.left-hat img{
+  height: 11rem;
+  width: 11rem;
+  position: absolute;
+  bottom: 0rem;
+  left: -58rem;  
+
+}
+.right-naruto img{
+   
+  height: 7rem;
+  width: 7rem;
+  position: absolute;
+  bottom: 3rem;
+  right: -4rem;
+  position: absolute;
+
+}
+.left-naruto img{
+  height: 8rem;
+  width: 8rem;
+  position: absolute;
+  top: 26rem;
+  left: -68rem;
+  
+
+}
+.right-totoro img{
+  height: 13rem;
+  width: 13rem;
+  position: absolute;
+  top: 21rem;
+  left: -14rem;
+  rotate: -15deg;
+  
+
+}
+.right-katana img{
+  height: 9.5rem;
+  width: 9.5rem;
+  position: absolute;
+  bottom: 12rem;
+  right: -13rem;
+  position: absolute;
+  /* transform: rotate(-30deg); */
+ 
+}
+.left-katana img{
+  height: 10rem;
+  width: 10rem;
+  position: absolute;
+  /* bottom: 3rem; */
+  top: 22rem;
+  left: -52rem;    
+}
+@keyframes bg-change {
+  0%,100%{
+      background-color: #f46060;
+  }
+  50%{
+      background-color: #4397e8;
+  }
+ 
+  
+}
+@keyframes animate-heart {
+  0%, 100% {
+      transform: translateY(100vh);
+      opacity: 0;
+  }
+  50% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+@keyframes animate-heart {
+  0%, 100%{
+      transform: translateY(0vh);
+      opacity: 1;
+  }
+  20% {
+      transform: translateY(0vh);
+      opacity: 1;
+  }
+  40% {
+      transform: translateY(100vh);
+      opacity: 1;
+  }
+  60% {
+      transform: translateY(100vh);
+      opacity: 1;
+  }
+  80% {
+      transform: translateY(0vh);
+      opacity: 1;
+  }
+
+}
+.left-heart img,
+.right-heart img,
+.left-flower img,
+.right-flower img,
+.left-cloud img,
+.right-choco img,
+.book img{
+  animation: animate-heart 10s  ease-in-out infinite;
+}
+.main-section {
+  overflow: hidden;
+}
+
+@keyframes animate-blue-elements {
+  0%, 100%{
+      transform: translateY(100vh);
+      opacity: 1;
+  }
+  20% {
+      transform: translateY(100vh);
+      opacity: 1;
+  }
+  40% {
+      transform: translateY(0vh);
+      opacity: 1;
+  }
+  60% {
+      transform: translateY(0vh);
+      opacity: 1;
+  }
+  80% {
+      transform: translateY(100vh);
+      opacity: 1;
+  }
+}
+
+.blue-elements .left-hat img,
+.blue-elements .left-naruto img,
+.blue-elements .right-naruto img,
+.blue-elements .left-katana img,
+.blue-elements .right-katana img,
+.blue-elements .right-totoro img,
+.blue-elements .bluebook  img{
+  animation: animate-blue-elements 10s ease-in-out infinite;
+}
+
+
+@keyframes bg-change {
+  0% {
+      background-color: #f46060;
+  }
+  20% {
+      background-color: #f46060;
+  }
+  25% {
+      background-color: #4397e8;
+  }
+  45% {
+      background-color: #4397e8;
+  }
+  50% {
+      background-color: #4397e8;
+  }
+  70% {
+      background-color: #4397e8;
+  }
+  75% {
+      background-color: #f46060;
+  }
+  100% {
+      background-color: #f46060;
+  }
+} 
+
+/* main end  -------------------------------------------------------------------------*/
   .carl{
     height: 100vh;
     width: 100%;
