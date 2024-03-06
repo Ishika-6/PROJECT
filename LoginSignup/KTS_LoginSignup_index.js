@@ -26,7 +26,7 @@ signInForm.addEventListener('submit', (e) => {
 	if (user) {
 		alert('Sign in successful');
 		signInForm.reset();
-		window.location.href = '../index.html';
+		window.location.href = '../dashboard/main_dashboard.html';
 	}
 	else {
 		alert('Invalid username or password');
