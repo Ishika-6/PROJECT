@@ -526,16 +526,16 @@
   left: 10%;
 }
 .slide1{
-  background-image: url("images/genres/romance/spanishlovedeception.jpg");
+  background-image: url("../images/genres/romance/spanishlovedeception.jpg");
 }
 .slide2{
-  background-image: url("images/genres/horror/conjuring.jpeg");
+  background-image: url("../images/genres/horror/conjuring.jpeg");
 }
 .slide3{
-  background-image: url("images/genres/poetry/leavesofgrass.jpg");
+  background-image: url("../images/genres/poetry/leavesofgrass.jpg");
 }
 .slide4{
-  background-image: url("images/genres/thriller/inferno.jpg");
+  background-image: url("../images/genres/thriller/inferno.jpg");
 }
 .swiper-slide{
   background-size: cover;
@@ -574,7 +574,7 @@
   background-size: cover;
 }
 .book1{
-  background-image: url(images/genres/romance/itendswithus.jpg);
+  background-image: url(../images/genres/romance/itendswithus.jpg);
   height: 240px;
   width: 170px;
   position: absolute;
@@ -585,7 +585,7 @@
 
 }
 .book2{
-  background-image: url(images/genres/romance/faultinourstars.jpg);
+  background-image: url(../images/genres/romance/faultinourstars.jpg);
   height: 150px;
   width: 110px;
   position: absolute;
@@ -595,7 +595,7 @@
   border-radius: 10px;
 }
 .book3{
-  background-image: url(images/genres/romance/hardwired.jpg);
+  background-image: url(../images/genres/romance/hardwired.jpg);
   height: 150px;
   width: 110px;
   position: absolute;
@@ -605,7 +605,7 @@
   border-radius: 10px;
 }
 .book4{
-  background-image: url(images/genres/romance/fiftyshades.jpg);
+  background-image: url(../images/genres/romance/fiftyshades.jpg);
   height: 230px;
   width: 160px;
   position: absolute;
@@ -615,7 +615,7 @@
   border-radius: 10px;
 }
 .book5{
-  background-image: url(images/genres/romance/twilight.jpg);
+  background-image: url(../images/genres/romance/twilight.jpg);
   height: 330px;
   width: 200px;
   position: absolute;
@@ -638,38 +638,38 @@
   border-radius: 15px;
 }
 @keyframes changeBooks1 {
-  0%, 100% { background-image: url(images/genres/romance/itendswithus.jpg); }
-  25% { background-image: url(images/genres/horror/psycho.jpg); }
-  50% { background-image: url(images/genres/poetry/greencardgirl.jpg); }
-  75% { background-image: url(images/genres/thriller/oneofthegoodguys.jpg); }
+  0%, 100% { background-image: url(../images/genres/romance/itendswithus.jpg); }
+  25% { background-image: url(../images/genres/horror/psycho.jpg); }
+  50% { background-image: url(../images/genres/poetry/greencardgirl.jpg); }
+  75% { background-image: url(../images/genres/thriller/oneofthegoodguys.jpg); }
 }
 
 @keyframes changeBooks2 {
-  0%, 100% { background-image: url(images/genres/romance/faultinourstars.jpg); }
-  25% { background-image: url(images/genres/horror/theinvogations.jpg); }
-  50% { background-image: url(images/genres/poetry/whatyourefusetoremember.jpg); }
-  75% { background-image: url(images/genres/thriller/whereyouend.jpg); }
+  0%, 100% { background-image: url(../images/genres/romance/faultinourstars.jpg); }
+  25% { background-image: url(../images/genres/horror/theinvogations.jpg); }
+  50% { background-image: url(../images/genres/poetry/whatyourefusetoremember.jpg); }
+  75% { background-image: url(../images/genres/thriller/whereyouend.jpg); }
 }
 
 @keyframes changeBooks3 {
-  0%, 100% { background-image: url(images/genres/romance/hardwired.jpg); }
-  25% { background-image: url(images/genres/horror/whereyouend.jpg); }
-  50% { background-image: url(images/genres/poetry/lifefucksmeeveryday.jpg); }
-  75% { background-image: url(images/genres/thriller/womanontheledge.jpg); }
+  0%, 100% { background-image: url(../images/genres/romance/hardwired.jpg); }
+  25% { background-image: url(../images/genres/horror/whereyouend.jpg); }
+  50% { background-image: url(../images/genres/poetry/lifefucksmeeveryday.jpg); }
+  75% { background-image: url(../images/genres/thriller/womanontheledge.jpg); }
 }
 
 @keyframes changeBooks4 {
-  0%, 100% { background-image: url(images/genres/romance/fiftyshades.jpg); }
-  25% { background-image: url(images/genres/horror/aplaceforvanishing.jpg); }
-  50% { background-image: url(images/genres/poetry/historyofhalfbirds.jpg); }
-  75% { background-image: url(images/genres/thriller/searchparty.jpg); }
+  0%, 100% { background-image: url(../images/genres/romance/fiftyshades.jpg); }
+  25% { background-image: url(../images/genres/horror/aplaceforvanishing.jpg); }
+  50% { background-image: url(../images/genres/poetry/historyofhalfbirds.jpg); }
+  75% { background-image: url(../images/genres/thriller/searchparty.jpg); }
 }
 
 @keyframes changeBooks5 {
-  0%, 100% { background-image: url(images/genres/romance/twilight.jpg); }
-  25% { background-image: url(images/genres/horror/midnightofbeckonstreet.jpg); }
-  50% { background-image: url(images/genres/poetry/resurrections.jpg); }
-  75% { background-image: url(images/genres/thriller/northwoods.jpg); }
+  0%, 100% { background-image: url(../images/genres/romance/twilight.jpg); }
+  25% { background-image: url(../images/genres/horror/midnightofbeckonstreet.jpg); }
+  50% { background-image: url(../images/genres/poetry/resurrections.jpg); }
+  75% { background-image: url(../images/genres/thriller/northwoods.jpg); }
 }
 
 .book1 {
