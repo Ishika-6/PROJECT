@@ -54,6 +54,17 @@
   scale: 1.1;
 }
 
+/* joinus button */
+.join-us{
+  display:inline;
+  width: 0;
+  height: 0;
+  margin: 0;
+  position: fixed;
+  top: 15px;
+  right: 13vw;
+}
+
 
 .animation-elements{
   position: relative;
