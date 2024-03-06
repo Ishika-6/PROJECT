@@ -63,6 +63,7 @@
   position: fixed;
   top: 15px;
   right: 13vw;
+  z-index: 9999;
 }
 
 
