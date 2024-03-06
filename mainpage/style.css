@@ -482,6 +482,8 @@
   font-style: normal;
   font-display: swap;
 }
+.swiper-wrapper{
+}
 
 *{
   margin: 0;
@@ -778,6 +780,11 @@ body {
   align-items: center;
   height: 100vh;
   justify-content: center;
-  background-color: #aacc00;
+  background-color: #f1eada;
+}
+
+.section-4 iframe{
+  width: 100%;
+  height: 100vh;
 }
 
