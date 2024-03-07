@@ -206,16 +206,7 @@
   top: 22rem;
   left: -52rem;    
 }
-@keyframes bg-change {
-  0%,100%{
-      background-color: #f46060;
-  }
-  50%{
-      background-color: #4397e8;
-  }
- 
-  
-}
+
 @keyframes animate-heart {
   0%, 100% {
       transform: translateY(100vh);
@@ -304,16 +295,16 @@
       background-color: #f46060;
   }
   25% {
-      background-color: #4397e8;
+      background-color: #60aaf4;
   }
   45% {
-      background-color: #4397e8;
+      background-color: #60aaf4;
   }
   50% {
-      background-color: #4397e8;
+      background-color: #60aaf4;
   }
   70% {
-      background-color: #4397e8;
+      background-color: #60aaf4;
   }
   75% {
       background-color: #f46060;
@@ -330,7 +321,7 @@
     overflow: hidden;
     font-family: 'Roboto', serif;
     /*background: linear-gradient(135deg, #B79891, #94716B);*/
-    background: linear-gradient(135deg, #ef233c, #ef233c);
+    background: linear-gradient(135deg, #f46060, #f24848);
   }
   
   .ontop{
@@ -494,7 +485,7 @@
 }
 .section-genres{
   height: 100vh;
-  background-color: #fe8003;
+  background-color: #f48560;
 }
 .genre-head{
   color: white;
@@ -696,7 +687,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: #0466c8;
+  background: #60aaf4;
 }
 
 .cont-paper-text{
