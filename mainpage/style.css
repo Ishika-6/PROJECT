@@ -61,8 +61,8 @@
   height: 0;
   margin: 0;
   position: fixed;
-  top: 15px;
-  right: 13vw;
+  top: 8px;
+  right: 12rem;
   z-index: 9999;
 }
 
@@ -313,6 +313,106 @@
       background-color: #f46060;
   }
 } 
+/* main section responsiveness */
+
+@media (max-width: 400px){
+  .main-title{
+    width: 85%;
+    font-size: 14px;
+  }
+  .main-buttons button{
+    width: 7rem;
+    height: 2rem;
+    margin: 1rem;
+  }
+  /* moving all animations to the centre */
+  .join-us{
+    display: block;
+    height: 0;
+    margin: 0;
+    position: absolute;
+    top: 250px;
+    left:8rem;
+    text-align: center;
+    z-index: 9999;
+  }
+
+  .left-heart img{
+    display: none;
+   
+  }
+  .right-heart img{
+    display: none;
+  }
+  
+  .book img{
+    height: 15rem;
+    width: 20rem;
+    background-size: cover;
+    position: absolute;
+    bottom: 0px;
+    right: 1rem;
+  }
+  .bluebook img{
+    height: 15rem;
+    width: 20rem;
+    background-size: cover;
+    position: absolute;
+    bottom: 0px;
+    right: 1rem;
+  }
+  .right-flower img{
+    height: 4rem;
+    width: 4rem;
+    bottom: 20rem;
+    right: 3rem;
+    /* transform: rotate(-30deg); */
+   
+  }
+  .left-flower img{
+    display: none;  
+  }
+  .right-choco img{
+    height: 7rem;
+    width: 7rem;
+    bottom: 15rem;
+    right: 12rem;
+    /* transform: rotate(-30deg); */
+   
+  }
+  .left-cloud img{
+    display: none;   
+  }
+  .left-hat img{
+    display: none; 
+  
+  }
+  .right-naruto img{
+    height: 7rem;
+    width: 7rem;
+    right: 2rem;
+    bottom: 17rem;
+  }
+  .left-naruto img{
+    display: none;
+  }
+  .right-totoro img{
+    height: 9rem;
+    width: 9rem;
+    top: 16rem;
+    left: -20rem;
+    rotate: 0deg;
+  }
+  .right-katana img{
+    display: none;
+   
+  }
+  .left-katana img{
+    display: none;  
+  }
+}
+
+
 
 /* main end  -------------------------------------------------------------------------*/
   .carl{
@@ -463,8 +563,17 @@
       opacity: .4;
     }
   }
+  @media (max-width:400px){
+    .ontop{
+      top: 58rem;
+    }
+    .carousel-item{
+      top: 30%;
+    }
+  }
 
 /* ISHIKA PART iske neeche saare sahi hai*/
+/* :) */
 @font-face {
   font-family: 'Brittany Signature';
   src: url('../fonts/BrittanySignatureRegular.woff2') format('woff2'),
@@ -679,6 +788,37 @@
 .book5 {
   animation: changeBooks5 20s infinite;
 }
+/* ------------------------------------------------------------------------------------------- */
+@media (max-width: 1000px){
+  .book{
+    display: none;
+  }
+  .genre-head h1{
+    font-size: 32px;
+    padding-top: 0.5rem;
+  }
+
+  .hero-element{
+    top: 50px;
+  
+  }
+  .sample-slider{
+    width:275px;
+    height: 400px;
+    border-radius: 10px;
+  }
+  .swiper-hero{
+    text-align: center;
+    left: 4rem;
+    top: 2rem;
+  }
+  .genre-quote{
+    left: 4rem;
+    top: -2rem;
+    font-size: 12px;
+    width: 275px;
+  }
+}
 
 /*END*/
 
@@ -761,6 +901,22 @@ body {
 }
 .hole-bottom {
   bottom: 10%;
+}
+
+@media (max-width:1000px){
+  .cont-paper-text{
+    height: 20vh;
+  }
+  .cont-papers{
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+  .paper{
+    width: 80vw;
+    height: 200px;
+    width: 350px;
+  }
 }
 
 .section-4{
