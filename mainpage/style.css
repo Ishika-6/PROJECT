@@ -426,15 +426,13 @@
   
   .ontop{
     font-family: "Orelo SemiWide DemiBold";
-    position: absolute;
     color: #fff;
-    /* bottom: 10%; */
-    top:170%;
     left: 10vw;
     z-index: 1;
     width: 50%;
     text-justify: distribute-all-lines;
-  
+    top: 35rem;
+    position: relative;
   }
   @media (max-width:1000px) {
     .ontop{
@@ -565,7 +563,10 @@
   }
   @media (max-width:400px){
     .ontop{
-      top: 58rem;
+      /* top: 58rem; */
+      width: 75%;
+      position: relative;
+      bottom: 50rem;
     }
     .carousel-item{
       top: 30%;
