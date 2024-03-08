@@ -731,6 +731,10 @@ span {
         margin-bottom: 20px;
     }
 
+    header ul{
+        gap: 10px;
+    }
+
     .menu-box{
         height: 52vh;
     }
@@ -780,6 +784,20 @@ span {
         margin-top: 25px;
         width: 100%;
     }
+}
 
-    
+@media (max-width: 480px) {
+
+    header{
+        height: 30vh;
+    }
+
+    header ul{
+        justify-content: center;
+        width: 100%;
+    }
+
+    .menu-box{
+        height: 58.5vh;
+    }
 }
