@@ -704,10 +704,12 @@ span {
 
 @media (max-width: 768px){
     *{
-        overflow-x: hidden;
+        padding: 0;
+        margin: 0;
+        margin-left: 10px;
+        box-sizing: border-box;
     }
-
-
+    
     .main-container{
         display: flex;
         flex-direction: column;
@@ -719,7 +721,6 @@ span {
 
     header{
         height: 25vh;
-        width: 95%;
         gap: 20px;
         padding: 20px;
         flex-direction: column;
