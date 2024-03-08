@@ -703,6 +703,11 @@ span {
 /* Media query for mobile phone */
 
 @media (max-width: 768px){
+    *{
+        overflow-x: hidden;
+    }
+
+
     .main-container{
         display: flex;
         flex-direction: column;
@@ -714,6 +719,7 @@ span {
 
     header{
         height: 25vh;
+        width: 95%;
         gap: 20px;
         padding: 20px;
         flex-direction: column;
