@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Playfair+Display&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    background: #e7e3d3;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+header{
+    background-color: #f9f8f4;
+    height: 11vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 35px; 
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+ul{
+    display: flex;
+}
+ul li {
+    list-style: none;
+    margin-right: 30px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 13px;
+    transition-property: color;
+    transition-duration: .2s;
+}
+ul li a:hover{
+    color: gray;
+}
+.logo img{
+    width: 45px;
+    padding-top: 5px;
+}
+.profile{
+    width: 70px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.profile i{
+    color: black;
+    cursor: pointer;
+  
+}
+.profile i:hover{
+    color: black;
+}
+.profile img{
+    width: 40px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    margin: auto;
+    visibility: hidden;
+    z-index: 50;
+}
+
+.input-field{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 5vh;
+    background: black;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.input-field input{
+    width: 93%;
+    height: 90%;
+    outline: none;
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+.input-field label{
+    cursor: pointer;
+}
+
+/* Cross Button */
+
+.cross{
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    right: 10px;
+    z-index: 50;
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    background-color: #e5c851;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+/* Cross Button */
+
+/* Reading Page Section Start */
+
+.reading-page{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.reading-page-main{
+    width: 75vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 40px;
+}
+
+/* Book Details Page Starts */
+
+.book-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.book-detail img{
+    width: 200px;
+    height: 300px;
+}
+
+.book-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.book-content h4{
+    margin-top: 20px;
+    color: grey;
+}
+
+.book-content p{
+    margin-top: 15px;
+}
+
+.book-details-buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.book-details-buttons button{
+    width: 9rem;
+    height: 2.5rem;
+    margin-top: 60px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: white;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    transition: all 0.5s ease;
+}
+
+.book-details-buttons button:first-of-type{
+    margin-right: 24rem;
+}
+
+.book-details-buttons button:not(:first-of-type){
+    background-color: green;
+    color: white;
+    border: 1px solid green;
+}
+
+.book-details-buttons button:hover {
+    background-color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.book-details-buttons button:not(:first-of-type):hover{
+    background-color: lightgreen;
+    color: black;
+    border: 1px solid lightgreen;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+/* Book Details Page Ends */
+
+/* Recommended Books Section */
+
+.recommended-books-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.recommended-books{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin: 10px;
+    width: 72vw;
+    margin-bottom: 60px;
+}
+
+.recommended-books h1{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.recommended-books-container{
+    display: flex;
+    height: 45vh;
+    background-color: white;
+    border-radius: 4px;
+    padding: 15px;
+    overflow: auto;
+}
+
+.recommended-books:nth-of-type(2) .recommended-books-container {
+    height: 40vh;
+    overflow-y: hidden;
+}
+
+
+.recommended-books:nth-of-type(2) .recommended-books-container .recommended-books-items{
+    display: inline;
+}
+
+.recommended:nth-of-type(2) .recommended-books-container .recommended-books-items img:nth-of-type(2) {
+    z-index: 1;
+    position: relative;
+    bottom: 246.5px;
+}
+
+.recommended-books-container::-webkit-scrollbar{
+    width: 0px;
+}
+
+.recommended-books-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    margin-bottom: -5px;
+}
+
+.recommended-books-items img{
+    width: 165px;
+    padding: 7px;
+    height: 240px;
+    border-radius: 4px;
+}
+
+.recommended-books-items h4{
+    margin-top: 10px;
+    color: grey;
+}
+
+/* Recommended Books Section Ends */
+
+
+/* Toggle Section Starts Here*/
+
+/* Main Section Starts */
+
+.reading-page-main-site{
+    margin-top: -55px;
+    display: none;
+    gap: 100px;
+    width: 100%;
+    background-color: #e7e3d3;
+}
+
+/* Main Section End */
+
+/* Left Side Start */
+
+.side-book-profile{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    display: flex;
+    padding: 20px;
+    margin-right: -100px;
+}
+
+.book-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.book-image img{
+    width: 250px;
+    height: 350px;
+}
+
+.book-details{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-details h1{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.book-details h4{
+    font-size: 17px;
+    color: grey;
+}
+
+.book-details p{
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: justify;
+    width: 80%;
+}
+
+/* Left Side End */
+
+/* Right Side Start */
+
+.page{
+    display: flex;
+    background-color: grey;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+}
+
+.pagecontent{
+    display: flex;
+    width: 90%;
+    height: 100%;
+    background-color: white;
+    z-index: 2;
+    margin-left: 12px;
+}
+
+.pagecontent iframe{
+    z-index: 3;
+    height: 100%;
+}
+
+/* Right Side End */
+
+/* Toggle Section Ends Here */
+
+
+/* Responsive Starts For Mobile */
+
+@media (max-width: 768px){
+    header{
+        height: 25vh;
+        gap: 20px;
+        padding: 20px;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .reading-page-main{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .book-detail img{
+        width: 150px;
+        height: 250px;
+    }
+    .book-details-buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+    .book-details-buttons button:first-of-type{
+        margin-right: 0;
+    }
+    .recommended-books-container{
+        flex-direction: column;
+        width:  80vw;
+        height: 40vh;
+    }
+    .recommended-books-items img{
+        width: 150px;
+        height: 200px;
+    }
+    .recommended-books{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .recommended-books h1{
+        font-size: 15px;
+    }
+    .recommended-books-section{
+        margin-top: 10px;
+    }
+    .recommended-books{
+        width: 70vw;
+    }
+    .side-book-profile{
+        width: 100%;
+        margin-right: 0;
+    }
+    .book-image img{
+        width: 150px;
+        height: 250px;
+    }
+
+
+    .cross{
+        width: 20%;
+    }
+
+    .reading-page-main-site{
+        flex-direction: column;
+    }
+
+    .pagecontent {
+        width: 100%;
+        height: 100vh;
+        margin-left: 0;
+        margin-top: 1px;
+    }
+
+    .pagecontent iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+/* Responsive End For Mobile */

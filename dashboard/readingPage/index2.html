@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/669bcf34d7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <header>
+        <div class="logo">
+            <img src="../images/logo.png" alt="">
+        </div>
+
+        <ul>
+            <li><a href="../main_dashboard.html">Home</a></li>
+            <li><a href="../profile.html">Profile</a></li>
+            <li><a href="../library.html">Library</a></li>
+            <li><a href="">Browse</a></li>
+            <li><a href="">Forums</a></li>
+        </ul>
+
+        <div class="profile">
+            <i class="fas fa-search"></i>
+            <img src="../images/sungjinwoo.jpg" alt="Profile-Pic" style="border-radius: 50%;">
+        </div>
+    </header>
+
+    <button class="cross">< Back To Book Profile</button>
+
+    <div class="search-bar">
+        <div class="input-field">
+            <label for="input" id="label-search"> <i class="fas fa-search"></i></label>
+            <input type="text" placeholder="Search something..." id="input" name="input">
+            <label for="input"><i class="fas fa-times"></i></label>
+        </div>
+    </div>  
+
+    <div class="reading-page">
+        <div class="reading-page-main">
+            <div class="book-detail">
+                <img src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx111258-8T0fZUQtKo82.jpg" alt="Book Image">
+            </div>
+            <div class="book-content">
+                <h1>Book Name</h1>
+
+                <h4>Synopsis</h4>
+
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, voluptatum eaque quae aut hic enim, corporis molestiae praesentium dicta deserunt necessitatibus sit optio reiciendis porro ipsa distinctio aspernatur harum numquam. Eum corrupti quis voluptatum culpa ea aliquam cupiditate impedit eveniet a quo perferendis suscipit, optio molestiae dolorum quaerat veniam reprehenderit!
+                </p>
+                
+                <div class="book-details-buttons">
+                    <button>Add to List</button>
+                    <button id="readFirst">Read First</button>
+                    <button id="readCurrent">Read Current</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recommended-books-section">
+        <div class="recommended-books">
+            <h1>Recommended Books</h1>
+            <div class="recommended-books-container">
+                <div class="recommended-books-items">
+                    <img src="../images/Books/1.jpg" alt="">
+                </div>
+                <div class="recommended-books-items">
+                    <img src="../images/Books/2.jpg" alt="">
+                </div>
+                <div class="recommended-books-items">
+                    <img src="../images/Books/3.jpg" alt="">
+                </div>
+                <div class="recommended-books-items">
+                    <img src="../images/Books/4.jpg" alt="">
+                </div>
+                <div class="recommended-books-items">
+                    <img src="../images/Books/5.jpg" alt="">
+                </div>
+                <div class="recommended-books-items">
+                    <img src="../images/Books/6.jpg" alt="">
+                </div>
+                <div class="recommended-books-items">
+                    <img src="../images/Books/7.jpg" alt="">
+                </div>
+                <div class="recommended-books-items">
+                    <img src="../images/Books/8.jpg" alt="">
+                </div>
+                <div class="recommended-books-items">
+                    <img src="../images/Books/9.jpg" alt="">
+                </div>
+                <div class="recommended-books-items">
+                    <img src="../images/Books/10.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="reading-page-main-site">
+    
+        <div class="side-book-profile">
+            <div class="book-image">
+                <img src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx111258-8T0fZUQtKo82.jpg" alt="Book Image">
+            </div>
+            <div class="book-details">
+                <h1>Book Name</h1>
+
+                <h4>Synopsis</h4>
+
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, voluptatum eaque quae aut hic enim, corporis molestiae praesentium dicta deserunt necessitatibus sit optio reiciendis porro ipsa distinctio aspernatur harum numquam. Eum corrupti quis voluptatum culpa ea aliquam cupiditate impedit eveniet a quo perferendis suscipit, optio molestiae dolorum quaerat veniam reprehenderit!
+                </p>
+            </div>
+        </div>
+
+        <div class="page">
+            <div class="pagecontent">
+                <iframe id="pdfView" src="../bookPDFS/Boo.pdf#view=FitH&toolbar=0&navpanes=0&scrollbar=0" style="width: 100%; height: 100%; border: none;"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
