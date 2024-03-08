@@ -789,15 +789,16 @@ span {
 @media (max-width: 480px) {
 
     header{
-        height: 30vh;
+        height: 100%;
     }
 
     header ul{
         justify-content: center;
         width: 100%;
+        gap: 5px;
     }
 
     .menu-box{
-        height: 58.5vh;
+        height: 100%;
     }
 }
