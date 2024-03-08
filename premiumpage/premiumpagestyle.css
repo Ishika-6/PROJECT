@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url(https://db.onlinewebfonts.com/c/0da4520eba0e03f116ad37c743fd3ffa?family=Orelo+SemiWide+DemiBold);
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* main begin ------------------------------------------------------------------- */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-section{
+  height: 100vh;
+  width: 100%;
+  background-color: #f46060;
+  /* background-color: #4397e8; */
+  color: white;
+  display: flex;
+  justify-content: center;
+  animation: bg-change 10s linear  infinite ;
+  /* animation-timing-function: steps(5, start); */
+}
+.main-title{
+  font-size: 1.55rem;
+  text-align: center;
+  width: 60%;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  margin-top: 1.2rem;
+  
+}
+
+.main-title h1{
+  font-family: 'Brittany Signature';
+  padding: 2rem;
+}
+.main-buttons{
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+}
+.main-buttons button{
+  width: 9rem;
+  height: 2.5rem;
+  margin: 1.3rem;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  /* animation on hover */
+  transition: all 0.5s ease;
+}
+.main-buttons button:hover{
+  background-color: white;
+  cursor: pointer;
+  scale: 1.1;
+}
+/* joinus button */
+.join-us{
+  display:inline;
+  width: 0;
+  height: 0;
+  margin: 0;
+  position: fixed;
+  right: 12rem;
+  z-index: 9999;
+}
+
+.animation-elements{
+  position: relative;
+}
+.left-heart img{
+  height: 8rem;
+  width: 8rem;
+  background-size: cover;
+  position: absolute;
+  bottom: 20rem;
+  left: -68rem;
+  position: absolute;
+  transform: rotate(10deg);
+ 
+}
+.right-heart img{
+  height: 6rem;
+  width: 6rem;
+  background-size: cover;
+  position: absolute;
+  bottom: 10rem;
+  right: -10rem;
+  position: absolute;
+  transform: rotate(-30deg);
+
+  
+}
+
+.book img{
+  height: 45vh;
+  width: 28rem;
+  background-size: cover;
+  position: absolute;
+  bottom: 0vh;
+  right: 16vw;
+  position: absolute;
+
+}
+.bluebook img{
+  
+  height: 22rem;
+  width: 25rem;
+  background-size: cover;
+  position: absolute;
+  bottom: 0px;
+  right: 16rem;
+  position: absolute;
+  
+  
+}
+.right-flower img{
+  height: 8rem;
+  width: 8rem;
+  position: absolute;
+  bottom: 20rem;
+  right: -6rem;
+  position: absolute;
+  /* transform: rotate(-30deg); */
+ 
+}
+.left-flower img{
+  height: 4.5rem;
+  width: 4.5rem;
+  position: absolute;
+  bottom: 17rem;
+  left: -52rem;    
+}
+.right-choco img{
+  height: 9.5rem;
+  width: 9.5rem;
+  position: absolute;
+  bottom: 3rem;
+  right: 0rem;
+  position: absolute;
+  /* transform: rotate(-30deg); */
+ 
+}
+.left-cloud img{
+  height: 12rem;
+  width: 12rem;
+  position: absolute;
+  bottom: 3rem;
+  left: -62rem;    
+}
+.left-hat img{
+  height: 11rem;
+  width: 11rem;
+  position: absolute;
+  bottom: 0rem;
+  left: -58rem;  
+
+}
+.right-naruto img{
+   
+  height: 7rem;
+  width: 7rem;
+  position: absolute;
+  bottom: 3rem;
+  right: -4rem;
+  position: absolute;
+
+}
+.left-naruto img{
+  height: 8rem;
+  width: 8rem;
+  position: absolute;
+  top: 26rem;
+  left: -68rem;
+  
+
+}
+.right-totoro img{
+  height: 13rem;
+  width: 13rem;
+  position: absolute;
+  top: 21rem;
+  left: -14rem;
+  rotate: -15deg;
+  
+
+}
+.right-katana img{
+  height: 9.5rem;
+  width: 9.5rem;
+  position: absolute;
+  bottom: 12rem;
+  right: -13rem;
+  position: absolute;
+  /* transform: rotate(-30deg); */
+ 
+}
+.left-katana img{
+  height: 10rem;
+  width: 10rem;
+  position: absolute;
+  /* bottom: 3rem; */
+  top: 22rem;
+  left: -52rem;    
+}
+
+.left-heart img,
+.right-heart img,
+.left-flower img,
+.right-flower img,
+.left-cloud img,
+.right-choco img,
+.book img{
+  animation: animate-heart 10s  ease-in-out infinite;
+}
+.main-section {
+  overflow: hidden;
+}
+
+
+/* main section responsiveness */
+
+@media (max-width: 400px){
+  .main-title{
+    width: 85%;
+    font-size: 14px;
+  }
+  .main-buttons button{
+    width: 7rem;
+    height: 2rem;
+    margin: 1rem;
+  }
+  /* moving all animations to the centre */
+  .join-us{
+    display: block;
+    height: 0;
+    margin: 0;
+    position: absolute;
+    top: 250px;
+    left:8rem;
+    text-align: center;
+    z-index: 9999;
+  }
+
+  .left-heart img{
+    display: none;
+   
+  }
+  .right-heart img{
+    display: none;
+  }
+  
+  .book img{
+    height: 15rem;
+    width: 20rem;
+    background-size: cover;
+    position: absolute;
+    bottom: 0px;
+    right: 1rem;
+  }
+  .bluebook img{
+    height: 15rem;
+    width: 20rem;
+    background-size: cover;
+    position: absolute;
+    bottom: 0px;
+    right: 1rem;
+  }
+  .right-flower img{
+    height: 4rem;
+    width: 4rem;
+    bottom: 20rem;
+    right: 3rem;
+    /* transform: rotate(-30deg); */
+   
+  }
+  .left-flower img{
+    display: none;  
+  }
+  .right-choco img{
+    height: 7rem;
+    width: 7rem;
+    bottom: 15rem;
+    right: 12rem;
+    /* transform: rotate(-30deg); */
+   
+  }
+  .left-cloud img{
+    display: none;   
+  }
+  .left-hat img{
+    display: none; 
+  
+  }
+  .right-naruto img{
+    height: 7rem;
+    width: 7rem;
+    right: 2rem;
+    bottom: 17rem;
+  }
+  .left-naruto img{
+    display: none;
+  }
+  .right-totoro img{
+    height: 9rem;
+    width: 9rem;
+    top: 16rem;
+    left: -20rem;
+    rotate: 0deg;
+  }
+  .right-katana img{
+    display: none;
+   
+  }
+  .left-katana img{
+    display: none;  
+  }
+}
