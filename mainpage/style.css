@@ -43,7 +43,7 @@
   height: 2.5rem;
   margin: 1.3rem;
   border-radius: 5px;
-  border: 1px solid white;
+  border: none;
   font-family: 'Be Vietnam Pro', sans-serif;
   /* animation on hover */
   transition: all 0.5s ease;
@@ -66,6 +66,24 @@
   z-index: 9999;
 }
 
+.premium{
+  background-color: #f48560;
+  top: 4px;
+  margin-top: 0rem !important;
+}
+
+.premium-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  gap: 0.5rem;
+}
+.premium:hover{
+  background-color: #f48560;
+  cursor: pointer;
+  scale: 1.1;
+}
 
 .animation-elements{
   position: relative;
