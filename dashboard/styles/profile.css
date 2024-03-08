@@ -9,11 +9,10 @@
 }
 
 body{
-    width: 100vw;
-    min-height: 100vh;
+    padding: 0;
+    margin: 0;
     background: #e7e3d3;
     font-family: 'Be Vietnam Pro', sans-serif;
-    overflow-x: hidden;
 }
 
 header{
@@ -176,13 +175,14 @@ span {
     height: 40px;
 }
 
-
 /** MAIN CONTAINER **/
 
 .main-container {
-    width: 950px;
-    height: 1725px;
-    margin: 6em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: -140px;
 }
 /** CONTAINERS **/
 .container {
@@ -199,7 +199,7 @@ span {
 
 
 .menu-box {
-    height: 360px;
+    height: 51vh;
 }
 
 .menu-box .titular {
@@ -255,33 +255,30 @@ span {
 }
 
 .donut-chart-block {
-    height: 434px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
 }
 
 .donut-chart-block .titular {
     padding: 10px 0;
+    font-size: 25px;
 }
 
-.donut-chart {
-    height: 270px;
-}
-
-/******************************************
-				DONUT-CHART 
-				******************************************/
 .donut-chart {
     position: relative;
     width: 200px;
     height: 200px;
-    margin: 0 auto 2rem;
-    border-radius: 100%
+    border-radius: 100%;
 }
 
-p.center-date {
+.center-date {
     background: #394264;
     position: absolute;
     text-align: center;
-    font-size: 28px;
+    font-size: 20px;
     top: 0;
     left: 0;
     bottom: 0;
@@ -360,15 +357,10 @@ p.center-date {
     transform: rotate(32deg);
 }
 
-/******************************************
-				END DONUT-CHART 
-				******************************************/
-.os-percentages {
-    padding-top: 36px;
-}
 
 .os-percentages li {
     width: 75px;
+    margin-bottom: -20px;
     border-left: 1px solid #394264;
     text-align: center;
     background: #50597b;
@@ -398,14 +390,10 @@ p.center-date {
 }
 
 .os-percentage {
-    margin: 0;
     padding: 0 0 15px 10px;
     font-size: 25px;
     color: white;
 }
-
-
-
 
 .time-lenght {
     padding-top: 22px;
@@ -426,8 +414,6 @@ p.center-date {
     transition: background .3s;
     color: white;
 }
-
-
 
 .month-data {
     padding-top: 28px;
@@ -465,87 +451,79 @@ p.center-date {
 }
 
 .profile{
-    height: 410px;
+    height: 51vh;
     width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
+
 .imageMain{
-    height: 25vh;
-    width: 25vh;
-    background-color: green;
-    position: relative;
-    top: 10%;
-    left:35%;
-    border-radius: 50%;
-    background-image: url(../images/sungjinwoo.jpg);
-    background-size: cover;
-    border: 2px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageMain img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: 5px solid white;
 }
 .imageName{
-    height: 7vh;
-    width: 30vh;
     color: black;
-    position: relative;
-    top: 11%;
-    left: 33%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 5vh;
 }
 .readBooks{
-    height: 25vh;
-    width: 40vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
 
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    
+.readBooks div{
+    background-color: #4fc4f6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 80%;
 }
-.booksred,  .currentStreak{
-    height: 8vh;
-    width: 10vw;
-    background-color: rgb(196, 191, 191);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Ubuntu', sans-serif;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 18px;
-    border-radius: 10px;
-}
-.booksPending{
-    height: 8vh;
-    width: 15vw;
-    background-color: rgb(196, 191, 191);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 18px;
-    border-radius: 10px;
-}
+
 .continue{
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    margin: 10px;
+    justify-content: space-around;  
     width: 40vw;
-    margin-bottom: 60px;
+    height: 70vh;
+    background-color: white;
+    border-radius: 4px;
 }
 
-.continue h1{
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: black;
+.continue-heading{
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.continue div h2{
+    font-size: 25px;
 }
 
 .continue-container{
     display: flex;
-    height: 45vh;
-    background-color: white;
+    height: 50vh;
     border-radius: 4px;
     padding: 15px;
-    overflow: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
 .continue:nth-of-type(2) .continue-container {
@@ -573,7 +551,7 @@ p.center-date {
     justify-content: center;
     align-items: center;
     margin: 10px;
-    margin-bottom: -5px;
+    margin-bottom: -50px;
 }
 
 .booksContinued img{
@@ -594,7 +572,8 @@ p.center-date {
     border-radius: 25px;
     align-items: center;
     height: 10px;
-    margin-top: 15px;
+    margin-top: 55px;
+    margin-bottom: 60px;
     width: 150px;
 }
 
@@ -617,11 +596,16 @@ p.center-date {
 /* Progress Bar Ends Here */
 
 .calendar-day {
-    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    height: 383px;
     background: #3468af;
 }
 
 .calendar-day .titular {
+    margin-top: -19px;
     background: #1a4e95;
 }
 
@@ -645,13 +629,12 @@ p.center-date {
 
 .calendar-month {
     height: 380px;
+    width: 50%;
 }
 
 .calendar-month .titular {
     background: #3468af;
 }
-
-
 
 .calendar {
     margin: 22px 15px;
@@ -679,16 +662,23 @@ p.center-date {
     background: #e64c65;
     border-radius: 100%;
 }
+
+
 .lastContainer{
     display: flex;
-  width: 650px;
-  
-  justify-content: space-evenly;
-  
+    margin-top: 23px;
+    width: 40vw;
+    justify-content: space-around;
+    gap: 20px;
 }
+
 .media{
-    height: 300px;
-    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 383px;
+    width: 100%;
 }
 
 .mediahead{
@@ -697,19 +687,88 @@ p.center-date {
     align-items: center;
     height: 3vh;
     font-family: 'Ubuntu', sans-serif;
-    color: black;
-    
+    color: black;   
 }
 #media-display {
-    position: relative;
-    height: 250px;
-    background: #787878 center top;
-    background-image: url('../images/Books/4.jpg');
-    background-size: cover;
-    color: black;
+    padding: 20px;
+   display: flex;
+    justify-content: center;
 }
 
+#media-display img {
+    height: 270px;
+    width: 100%;
+}
 
+/* Media query for mobile phone */
 
+@media (max-width: 768px){
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
 
+    header{
+        height: 25vh;
+        gap: 20px;
+        padding: 20px;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
 
+    .menu-box{
+        height: 52vh;
+    }
+
+    .media{
+        margin-top: 50px;
+    }
+
+    .profile{
+        margin-top: 25px;
+        height: 70vh;
+        width: 100%;
+    }
+    
+    .readBooks{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .readBooks div{
+        text-align: center;
+        font-size: 80%;
+        width: 80%;
+    }
+    
+    .continue{
+        margin-top: 50px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .continue-container{
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+
+    .lastContainer{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .calendar-day{
+        width: 100%;
+    }
+
+    .calendar-month{
+        margin-top: 25px;
+        width: 100%;
+    }
+
+    
+}

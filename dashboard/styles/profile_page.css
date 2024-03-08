@@ -1,0 +1,429 @@
+/* Header Starts Here */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    background: #e7e3d3;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+header{
+    background-color: #f9f8f4;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 35px; 
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+ul{
+    display: flex;
+}
+ul li {
+    list-style: none;
+    margin-right: 30px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 13px;
+    transition-property: color;
+    transition-duration: .2s;
+}
+ul li a:hover{
+    color: gray;
+}
+.logo img{
+    width: 45px;
+    padding-top: 5px;
+}
+.profile{
+    width: 70px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.profile i{
+    color: black;
+    cursor: pointer;
+  
+}
+.profile i:hover{
+    color: black;
+}
+.profile img{
+    width: 40px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    margin: auto;
+    visibility: hidden;
+    z-index: 50;
+}
+
+.input-field{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 5vh;
+    background: black;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.input-field input{
+    width: 93%;
+    height: 90%;
+    outline: none;
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+.input-field label{
+    cursor: pointer;
+}
+
+/* Header Ends Here */
+
+.main-profile-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    border: 5px solid black;
+}
+
+.profile-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100vh;
+    border: 5px solid black;
+    background: #e7e3d3;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+/* First Container Starts Here */
+
+.first-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+/* Menu Box Starts */
+
+.menu-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+    height: 50vh;
+    border: 5px solid black;
+    background: white;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+.menu-box div{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.menu-box div h5:nth-of-type(1) {
+    width: 90%;
+}
+
+.menu-box div h5:nth-of-type(2) {
+    width: 10%;
+}
+
+
+/* Menu Box Ends */
+
+.main-profile{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 50vh;
+}
+
+.profile-picture{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-picture img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.profile-buttons{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.profile-buttons h4{
+    margin-bottom: 20px;
+    border: 2px solid black;
+    padding: 1rem;
+}
+
+/* First Container Ends Here */
+
+/* Middle Container Starts */
+
+.middle-container{
+    display: flex;
+    border: 5px solid black;
+}
+
+
+.continue{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin: 10px;
+    width: 40vw;
+    margin-bottom: 60px;
+}
+
+.continue h1{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.continue-container{
+    display: flex;
+    height: 45vh;
+    background-color: white;
+    border-radius: 4px;
+    padding: 15px;
+    overflow: auto;
+}
+
+.continue:nth-of-type(2) .continue-container {
+    height: 40vh;
+    overflow-y: hidden;
+}
+
+.continue:nth-of-type(2) .continue-container .booksContinued{
+    display: inline;
+}
+
+.continue:nth-of-type(2) .continue-container .booksContinued img:nth-of-type(2) {
+    z-index: 1;
+    position: relative;
+    bottom: 246.5px;
+}
+
+.continue-container::-webkit-scrollbar{
+    width: 0px;
+}
+
+.booksContinued{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    margin-bottom: -5px;
+}
+
+.booksContinued img{
+    width: 165px;
+    padding: 7px;
+    height: 240px;
+    border-radius: 4px;
+}
+
+
+/* Progress Bar */
+
+.progress {
+    background: gainsboro;
+    border-radius: 25px;
+    align-items: center;
+    height: 10px;
+    margin-top: 15px;
+    width: 150px;
+}
+
+.progress-value {
+    border-radius: 25px;
+    background: rgba(0, 0, 0, 0.51);
+    height: 10px;
+    width: 0;
+}
+
+/* Progress Bar Ends*/
+
+/* Donut Chart Starts */
+
+
+.donut-chart {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 2rem;
+    border-radius: 100%
+}
+
+.center-date {
+    background: #394264;
+    position: absolute;
+    text-align: center;
+    font-size: 24px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 130px;
+    height: 130px;
+    margin: auto;
+    border-radius: 50%;
+    line-height: 35px;
+    padding: 15% 0 0;
+}
+
+.center-date span.scnd-font-color {
+    line-height: 0;
+}
+
+.recorte {
+    border-radius: 50%;
+    clip: rect(0px, 200px, 200px, 100px);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.quesito {
+    border-radius: 50%;
+    clip: rect(0px, 100px, 200px, 0px);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    font-family: monospace;
+    font-size: 1.5rem;
+}
+
+#porcion1 {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+#porcion1 .quesito {
+    background-color: #E64C65;
+    -webkit-transform: rotate(76deg);
+    transform: rotate(76deg);
+}
+
+#porcion2 {
+    -webkit-transform: rotate(76deg);
+    transform: rotate(76deg);
+}
+
+#porcion2 .quesito {
+    background-color: #11A8AB;
+    -webkit-transform: rotate(140deg);
+    transform: rotate(140deg);
+}
+
+#porcion3 {
+    -webkit-transform: rotate(215deg);
+    transform: rotate(215deg);
+}
+
+#porcion3 .quesito {
+    background-color: #4FC4F6;
+    -webkit-transform: rotate(113deg);
+    transform: rotate(113deg);
+}
+
+#porcionFin {
+    -webkit-transform: rotate(-32deg);
+    transform: rotate(-32deg);
+}
+
+#porcionFin .quesito {
+    background-color: #FCB150;
+    -webkit-transform: rotate(32deg);
+    transform: rotate(32deg);
+}
+
+.os-percentages{
+    display: flex;
+    justify-content: center;
+}
+
+.os-percentages li {
+    margin: 0;
+    width: 75px;
+    border-left: 1px solid #394264;
+    text-align: center;
+    background: #50597b;
+}
+
+.os {
+    margin: 0;
+    padding: 10px 0 5px;
+    font-size: 15px;
+    color: white;
+}
+
+.os.ios {
+    border-top: 4px solid #e64c65;
+}
+
+.os.mac {
+    border-top: 4px solid #11a8ab;
+}
+
+.os.linux {
+    border-top: 4px solid #fcb150;
+}
+
+.os.win {
+    border-top: 4px solid #4fc4f6;
+}
+
+.os-percentage {
+    margin: 0;
+    padding: 0 0 15px 10px;
+    font-size: 25px;
+    color: white;
+}
+
+/* Donut Chart Ends Here */
+
+/* Middle Container Ends */
