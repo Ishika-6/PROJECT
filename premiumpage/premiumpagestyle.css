@@ -5,6 +5,15 @@
 
 /* main begin ------------------------------------------------------------------- */
 
+@font-face {
+  font-family: 'Brittany Signature';
+  src: url('../fonts/BrittanySignatureRegular.woff2') format('woff2'),
+  url('../fonts/BrittanySignatureRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -18,11 +27,9 @@
   color: white;
   display: flex;
   justify-content: center;
-  animation: bg-change 10s linear  infinite ;
-  /* animation-timing-function: steps(5, start); */
 }
 .main-title{
-  font-size: 1.55rem;
+  font-size: 1.55rem !important;
   text-align: center;
   width: 60%;
   font-family: 'Be Vietnam Pro', sans-serif;
