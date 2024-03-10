@@ -1,84 +1,104 @@
+/*--------------------
+    Constants
+--------------------*/
+const speedDrag = -0.1; // Adjust this value to control the dragging speed
 
 /*--------------------
-Contants
+    Helper Functions
 --------------------*/
-const speedWheel = 0.02
-const speedDrag = -0.1
+const getZIndex = (array, index) => {
+  // Create a new array with the same length as the input array
+  const zIndices = array.map((_, i) => {
+    // If the current index (i) is equal to the provided index
+    if (index === i) {
+      // Return the length of the array (this will be the highest z-index)
+      return array.length;
+    } else {
+      // Otherwise, calculate the difference between the current index (i) and the provided index
+      const difference = Math.abs(index - i);
+      
+      // Subtract the difference from the length of the array
+      // This will ensure that items closer to the active item have a higher z-index
+      return array.length - difference;
+    }
+  });
+
+  // Return the new array with the calculated z-indices
+  return zIndices;
+}
 
 /*--------------------
-Get Z
+    Get Elements
 --------------------*/
-const getZindex = (array, index) => (array.map((_, i) => (index === i) ? array.length : array.length - Math.abs(index - i)))
+const carItems = document.querySelectorAll('.carousel-item'); // Get all carousel items
+const cursors = document.querySelectorAll('.cursor'); // Get all cursor elements (if any)
 
 /*--------------------
-Items
+    Display Items
 --------------------*/
-const $items = document.querySelectorAll('.carousel-item')
-const $cursors = document.querySelectorAll('.cursor')
-
 const displayItems = (item, index, active) => {
-  const zIndex = getZindex([...$items], active)[index]
-  item.style.setProperty('--zIndex', zIndex)
-  item.style.setProperty('--active', (index-active)/$items.length)
+  const zIndex = getZIndex([...carItems], active)[index]; // Calculate the z-index for the current item
+  item.style.setProperty('--zIndex', zIndex); // Set the --zIndex CSS variable for the item
+  item.style.setProperty('--active', (index - active) / carItems.length); // Set the --active CSS variable for the item
 }
 
 /*--------------------
-Animate
+    Animate
 --------------------*/
-
-let progress = 50
+let progress = 50; // Initial progress value
 const animate = () => {
-  progress = Math.max(0, Math.min(progress, 100))
-  active = Math.floor(progress/100*($items.length-1))
-  
-  $items.forEach((item, index) => displayItems(item, index, active))
+  progress = Math.max(0, Math.min(progress, 100)); // Ensure progress is between 0 and 100
+  const active = Math.floor(progress / 100 * (carItems.length - 1)); // Calculate the active item index based on progress
+
+  carItems.forEach((item, index) => displayItems(item, index, active)); // Update the styles for each item
 }
-animate()
+animate(); // Initialize the carousel
 
 /*--------------------
-Click on Items
+    Click on Items
 --------------------*/
-$items.forEach((item, i) => {
+carItems.forEach((item, i) => {
   item.addEventListener('click', () => {
-    progress = (i/$items.length) * 100 + 10
-    animate()
-  })
-})
+    progress = (i / carItems.length) * 100 + 10; // Calculate the new progress based on the clicked item
+    animate(); // Animate the carousel
+  });
+});
 
-/*--------------------
-Handlers
---------------------*/
+// /*--------------------
+//     Handlers
+// --------------------*/
+// let isDown = false; // Track if the mouse is down
+// let startX; // Store the initial mouse position
 
-const handleMouseMove = (e) => {
-  if (e.type === 'mousemove') {
-    $cursors.forEach(($cursor) => {
-      $cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`
-    })
-  }
-  if (!isDown) return
-  const x = e.clientX || (e.touches && e.touches[0].clientX) || 0
-  const mouseProgress = (x - startX) * speedDrag
-  progress = progress + mouseProgress
-  startX = x
-  animate()
-}
+// const handleMouseMove = (e) => {
+//   if (e.type === 'mousemove') {
+//     // Update cursor positions (if applicable)
+//     cursors.forEach((cursor) => {
+//       cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+//     });
+//   }
 
-const handleMouseDown = e => {
-  isDown = true
-  startX = e.clientX || (e.touches && e.touches[0].clientX) || 0
-}
+//   if (!isDown) return; // Exit if the mouse is not down
 
-const handleMouseUp = () => {
-  isDown = false
-}
+//   const x = e.clientX || (e.touches && e.touches[0].clientX) || 0; // Get the current mouse/touch position
+//   const mouseProgress = (x - startX) * speedDrag; // Calculate the progress based on mouse/touch movement
+//   progress = progress + mouseProgress; // Update the progress
+//   startX = x; // Update the starting position
+//   animate(); // Animate the carousel
+// }
 
-/*--------------------
-Listeners
---------------------*/
-// document.addEventListener('mousewheel', handleWheel)
-document.addEventListener('mousedown', handleMouseDown)
-document.addEventListener('mousemove', handleMouseMove)
-document.addEventListener('mouseup', handleMouseUp)
-document.addEventListener('touchstart', handleMouseDown)
-document.addEventListener('touchmove', handleMouseMove)
-document.addEventListener('touchend', handleMouseUp)
+// const handleMouseDown = e => {
+//   isDown = true; // Set isDown to true when the mouse is down
+//   startX = e.clientX || (e.touches && e.touches[0].clientX) || 0; // Store the initial mouse/touch position
+// }
+
+// const handleMouseUp = () => {
+//   isDown = false; // Set isDown to false when the mouse is released
+// }
+
+// /*--------------------
+//     Listeners
+// --------------------*/
+// document.addEventListener('mousedown', handleMouseDown); // Listen for mousedown events
+// document.addEventListener('mousemove', handleMouseMove); // Listen for mousemove events
+// document.addEventListener('mouseup', handleMouseUp); // Listen for mouseup events
