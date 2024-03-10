@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/browser.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/logo.png" alt="">
+        </div>
+
+        <ul>
+            <li><a href="./main_dashboard.html">Home</a></li>
+            <li><a href="./profile.html">Profile</a></li>
+            <li><a href="./library.html">Library</a></li>
+            <li><a href="./browser.html">Browse</a></li>
+            <li><a href="">Forums</a></li>
+        </ul>
+
+        <div class="profile">
+            <i class="fas fa-search"></i>
+            <img src="./images/sungjinwoo.jpg" alt="" style="border-radius: 50%;">
+        </div>
+    </header>
+    <div class="browse-section">
+        <div class="search-content">
+            <form id="searchForm" action="submit" >
+                <input type="text" id="searchInput" placeholder="Enter your Search">
+                <button>Search</button>
+                
+            </form>
+            
+        </div>
+        
+    </div>
+    <div class="genre-grid" id="genreGrid">
+        <div class="gen pinkpastel">Romance</div>
+        <div class="gen darkgreenpastel">Fiction</div>
+        <div class="gen purplepastel">Comics</div>  
+        <div class="gen lightgreenpastel">Mangas</div>
+        <div class="gen lightbeigepastel">Self-Help</div>
+        <div class="gen pinkpastel">Poetry</div>
+        <div class="gen darkgreenpastel">Non-fiction</div>
+        <div class="gen purplepastel">Educational</div>
+        <div class="gen darkgreenpastel">Classics</div>
+    </div>
+    <div class="search-results" id="searchResults" style="display: none;">
+        <div class="bookList" id="bookList"></div>
+        
+    </div>
+
+
+    
+    <script>
+        const bookList = document.getElementById("bookList");
+        const genreGridItems = document.querySelectorAll('.gen');
+
+        document.getElementById('searchForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+            document.getElementById('genreGrid').style.display = 'none';
+            document.getElementById('searchResults').style.display = 'block';
+
+            const searchInputValue = document.getElementById('searchInput').value;
+            renderBooks(searchInputValue);
+        });
+
+        async function fetchBooks(search) {
+            const response = await fetch('https://www.googleapis.com/books/v1/volumes?q=' + search);
+            const data = await response.json();
+            console.log(data.items);
+            return data.items;
+        }
+
+        async function renderBooks(search) {
+            
+            const bookListContainer = document.getElementById('bookList');
+            bookListContainer.innerHTML = ''; 
+
+            const books = await fetchBooks(search);
+            books.forEach(book => {
+                const bookItem = document.createElement('div');
+                bookItem.innerHTML = `
+                    <div class='left-sec'>
+                    <img src="${book.volumeInfo.imageLinks.thumbnail}" alt="${book.volumeInfo.title}"></div>
+                    <div class='right-sec'>
+                    <h2>${book.volumeInfo.title}</h2>
+                    <p>${book.volumeInfo.authors ? book.volumeInfo.authors.join(', ') : 'Unknown Author'}</p>
+                    <p>${book.volumeInfo.description ? book.volumeInfo.description.slice(0,350) + '...': 'No description available'}</p>
+                    <a href="">Read More</a>
+                    </div>
+                `;
+                bookListContainer.appendChild(bookItem);
+                bookItem.classList.add('bookItem');
+            });
+        }
+        genreGridItems.forEach(item => {
+            item.addEventListener('click', function() {
+                console.log("element clicked");
+                const query = this.innerHTML.toLowerCase(); 
+                document.getElementById('genreGrid').style.display = 'none';
+            document.getElementById('searchResults').style.display = 'block';
+
+            renderBooks(query);
+            });
+        });
+    </script>
+</body>
+</html>
