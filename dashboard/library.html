@@ -2,14 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://kit.fontawesome.com/669bcf34d7.js" crossorigin="anonymous"></script>
+    <title>Library</title>
     <link rel="stylesheet" href="./styles/librarystyle.css">
 </head>
 <body>
+    <!-- Your content here -->
 
+    <!-- <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Browse</li>
+                <li>Authors</li>
+                <li>Profile</li>
+            </ul>
+
+        </nav>
+    </header> -->
     <header>
         <div class="logo">
             <img src="./images/logo.png" alt="">
@@ -25,179 +35,70 @@
 
         <div class="profile">
             <i class="fas fa-search"></i>
-            <img src="./images/sungjinwoo.jpg" alt="Profile-Pic" style="border-radius: 50%;">
+            <img src="./images/sungjinwoo.jpg" alt="" style="border-radius: 50%;">
         </div>
     </header>
-
-    <div class="search-bar">
-        <div class="input-field">
-            <label for="input" id="label-search"> <i class="fas fa-search"></i></label>
-            <input type="text" placeholder="Search something..." id="input" name="input">
-            <label for="input"><i class="fas fa-times"></i></label>
+    <div class="lib-main">
+        <div class="circle">
+            <div class="lib-head">
+                <h1>KNOW THY SHELF</h1>
+                <H1>LIBRARY</H1>
+            </div>
         </div>
-    </div>  
-
-    <div class="library">
-        <section class="continue">
-            <h1>Continue Reading</h1>
-            <div class="continue-container">
-                <div class="booksContinued">
-                    <img src="./images/Books/1.jpg" alt="">
-                    <div class="progress">
-                        <div class="progress-value pX" style="--percentage: 40%;"></div>
-                    </div>
-                </div>
-                <div class="booksContinued">
-                    <img src="./images/Books/2.jpg" alt="">
-                    <div class="progress">
-                        <div class="progress-value pX" style="--percentage: 40%;"></div>
-                    </div>
-                </div>
-                <div class="booksContinued">
-                    <img src="./images/Books/3.jpg" alt="">
-                    <div class="progress">
-                        <div class="progress-value pX" style="--percentage: 40%;"></div>
-                    </div>
-                </div>
-                <div class="booksContinued">
-                    <img src="./images/Books/4.jpg" alt="">
-                    <div class="progress">
-                        <div class="progress-value pX" style="--percentage: 40%;"></div>
-                    </div>
-                </div>
-                <div class="booksContinued">
-                    <img src="./images/Books/5.jpg" alt="">
-                    <div class="progress">
-                        <div class="progress-value pX" style="--percentage: 40%;"></div>
-                    </div>
-                </div>
-                <div class="booksContinued">
-                    <img src="./images/Books/6.jpg" alt="">
-                    <div class="progress">
-                        <div class="progress-value pX" style="--percentage: 40%;"></div>
-                    </div>
-                </div>
-                <div class="booksContinued">
-                    <img src="./images/Books/7.jpg" alt="">
-                    <div class="progress">
-                        <div class="progress-value pX" style="--percentage: 40%;"></div>
-                    </div>
-                </div>
-                <div class="booksContinued">
-                    <img src="./images/Books/8.jpg" alt="">
-                    <div class="progress">
-                        <div class="progress-value pX" style="--percentage: 40%;"></div>
-                    </div>
-                </div>
-                <div class="booksContinued">
-                    <img src="./images/Books/9.jpg" alt="">
-                    <div class="progress">
-                        <div class="progress-value pX" style="--percentage: 40%;"></div>
-                    </div>
-                </div>
-                <div class="booksContinued">
-                    <img src="./images/Books/10.jpg" alt="">
-                    <div class="progress">
-                        <div class="progress-value pX" style="--percentage: 40%;"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="continue">
-            <h1>Current Top 10 Books</h1>
-            <div class="continue-container">
-                <div class="booksContinued">
-                    <img src="./images/Books/1.jpg" alt="">
-                    <img src="./images/Ranking/1.png" alt="">
-                </div>
-                <div class="booksContinued">
-                    <img src="./images/Books/2.jpg" alt="">
-                    <img src="./images/Ranking/2.png" alt="">
-                </div>
-                <div class="booksContinued">
-                    <img src="./images/Books/3.jpg" alt="">
-                    <img src="./images/Ranking/3.png" alt="">
-                </div>
-                <div class="booksContinued">
-                    <img src="./images/Books/4.jpg" alt="">
-                    <img src="./images/Ranking/4.png" alt="">
-                </div>
-                <div class="booksContinued">
-                    <img src="./images/Books/5.jpg" alt="">
-                    <img src="./images/Ranking/5.png" alt="">
-                </div>
-                <div class="booksContinued">
-                    <img src="./images/Books/6.jpg" alt="">
-                    <img src="./images/Ranking/6.png" alt="">
-                </div>
-                <div class="booksContinued">
-                    <img src="./images/Books/7.jpg" alt="">
-                    <img src="./images/Ranking/7.png" alt="">
-                </div>
-                <div class="booksContinued">
-                    <img src="./images/Books/8.jpg" alt="">
-                    <img src="./images/Ranking/8.png" alt="">
-                </div>
-                <div class="booksContinued">
-                    <img src="./images/Books/9.jpg" alt="">
-                    <img src="./images/Ranking/9.png" alt="">
-                </div>
-                <div class="booksContinued">
-                    <img src="./images/Books/10.jpg" alt="">
-                    <img src="./images/Ranking/10.png" alt="">
-                </div>
-            </div>
-        </section>
-
-        <section class="continue">
-            <h1>Our Newest Uploads</h1>
-            <div class="continue-container">
-                <div class="booksContinued">
-                    <img src="./images/Books/1.jpg" alt="">
-                    <h4>5 min ago</h4>
-                </div>
-                <div class="booksContinued">
-                    <img src="./images/Books/2.jpg" alt="">
-                    <h4>5 min ago</h4>
-                </div>
-                <div class="booksContinued">
-                    <img src="./images/Books/3.jpg" alt="">
-                    <h4>5 min ago</h4>
-                </div>
-                <div class="booksContinued">
-                    <img src="./images/Books/4.jpg" alt="">
-                    <h4>5 min ago</h4>
-                </div>
-                <div class="booksContinued">
-                    <img src="./images/Books/5.jpg" alt="">
-                    <h4>5 min ago</h4>
-                </div>
-                <div class="booksContinued">
-                    <img src="./images/Books/6.jpg" alt="">
-                    <h4>5 min ago</h4>
-                </div>
-                <div class="booksContinued">
-                    <img src="./images/Books/7.jpg" alt="">
-                    <h4>5 min ago</h4>
-                </div>
-                <div class="booksContinued">
-                    <img src="./images/Books/8.jpg" alt="">
-                    <h4>5 min ago</h4>
-                </div>
-                <div class="booksContinued">
-                    <img src="./images/Books/9.jpg" alt="">
-                    <h4>5 min ago</h4>
-                </div>
-                <div class="booksContinued">
-                    <img src="./images/Books/10.jpg" alt="">
-                    <h4>5 min ago</h4>
-                </div>
-            </div>
-        </section>  
     </div>
+    <div id="bookList" class="bookList">
+        
+    </div>
+    <h3 class="genre-head">Discover more in Romance</h3>
+    <div class="rom-list" id="rom-list">
+        
+    </div>
+    <h3 class="genre-head">Discover more in Horror</h3>
+    <div class="horror-list" id="horror-list"></div>
+    <h3 class="genre-head">Discover more in Thriller</h3>
+    <div class="thriller-list" id="thriller-list"></div>
+    <h3 class="genre-head">Discover more in Psychology</h3>
+    <div class="psycho-list" id="psycho-list"></div>
+    <h3 class="genre-head">Discover more study books</h3>
+    <div class="study-list" id="study-list"></div>
 
-    <script src="mainscript.js">
+    
+    <script>
+        const bookList = document.getElementById('bookList');
+        const romlist = document.getElementById('rom-list');
+        const thrillerlist = document.getElementById('thriller-list');
+        const psycholist = document.getElementById('psycho-list');
+        const studylist = document.getElementById('study-list');
+        const horrorList = document.getElementById('horror-list');
+        async function fetchBooks(genre) {
+            const response = await fetch('https://www.googleapis.com/books/v1/volumes?q=' + genre);
+            const data = await response.json();
+            console.log(data.items);
+            return data.items;
+        }
+
+        async function renderBooks(genre,bookList) {
+            bookList.classList.add('bookList');
+            const books = await fetchBooks(genre);
+            books.forEach(book => {
+                const bookItem = document.createElement('div');
+                bookItem.innerHTML = `
+                    <img src="${book.volumeInfo.imageLinks.thumbnail}" alt="${book.volumeInfo.title}">
+                    <h2>${book.volumeInfo.title}</h2>
+                    <p>${book.volumeInfo.authors ? book.volumeInfo.authors.join(', ') : 'Unknown Author'}</p>
+                    <p>${book.volumeInfo.description ? book.volumeInfo.description.slice(0,100) + '...': 'No description available'}</p>
+                    <a href="">Read More</a>
+                `;
+                bookList.appendChild(bookItem);
+                bookItem.classList.add('book');
+            });
+        }
+
+        renderBooks('horror',horrorList);
+        renderBooks('romance',romlist);
+        renderBooks('thriller',thrillerlist);
+        renderBooks('psychology',psycholist);
+        renderBooks('study',studylist);
     </script>
 </body>
 </html>
